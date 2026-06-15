@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
+import gustavoImg from '../assets/gustavo.png';
 
 const posts = (await getCollection('blog', ({ data }) => !data.draft))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
@@ -18,6 +20,7 @@ const formatDate = (date: Date) =>
       <div class="hero-inner">
 
         <div class="hero-left">
+          <Image src={gustavoImg} alt="Gustavo Fonseca" class="hero-avatar" width={384} height={384} format="webp" quality={90} loading="eager" fetchpriority="high" />
           <p class="eyebrow">Performance Marketing · AI · Dev</p>
           <h1>
             Building<br />
@@ -117,6 +120,18 @@ const formatDate = (date: Date) =>
     display: flex;
     flex-direction: column;
     gap: 2rem;
+  }
+
+  .hero-avatar {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 20%;
+    border: 3px solid #3a3a3a;
+    outline: 1px solid #252525;
+    box-shadow: 0 0 0 6px #1a1a1a;
+    flex-shrink: 0;
   }
 
   .eyebrow {

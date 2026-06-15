@@ -1,10 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import gustavoImg from '../assets/gustavo.png';
 ---
 
 <BaseLayout
   title="About"
-  description="Gustavo Fonseca, performance marketing specialist. 16 years in London, now remote from Málaga, South Spain."
+  description="Gustavo Fonseca, performance marketing specialist. Over 20 years in London, now remote from Málaga, South Spain."
 >
   <div class="container">
     <section class="page">
@@ -15,7 +17,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <div>
             <h1>Gustavo Fonseca</h1>
           </div>
-          <img src="/gustavo.png" alt="Gustavo Fonseca" class="avatar" />
+          <Image src={gustavoImg} alt="Gustavo Fonseca" class="avatar" width={384} height={384} format="webp" quality={90} loading="eager" fetchpriority="high" />
         </div>
       </header>
 
@@ -23,7 +25,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
         <p class="lead">
           I grew up in Brazil, studied web marketing, and moved to London with the intention of
-          staying a few years. That was 16 years ago.
+          staying a few years. That was over 20 years ago.
+        </p>
+
+        <p>
+          I left London for Málaga a few years ago. My little family is the centre of it.
+          Two boys, a love for sailing in Croatia when summer allows, and a snowboard
+          that gets used more than it should. I do the same work, at the same level,
+          from a much better view.
         </p>
 
         <p>
@@ -50,7 +59,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           was a blockchain-based platform for distributed teams: work gets delivered, payment
           gets released automatically through smart contracts, no middleman, no disputes.
           It was ahead of its time. A group in India acquired the platform and the underlying
-          technology for £6 million before it had even launched. I was not yet 30.
+          technology before it had even launched. I was not yet 30.
         </p>
 
         <p>
@@ -63,37 +72,58 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </p>
 
         <p>
-          Today I lead performance marketing at Classy Llama, managing multi-million pound
+          Today I lead performance marketing at Classy Agency in the US, managing multi-million pound
           campaigns across Google, Meta and Shopping for e-commerce brands. I care as much about
           building the team as I do about the results. People who understand the work deeply
           produce better outcomes. That's not a soft belief, it shows in the numbers.
         </p>
 
         <p>
-          I am also building <a href="https://octopusmenu.com" target="_blank" rel="noopener">octopusmenu.com</a>,
-          a QR menu platform for restaurants, currently live in the UK. My developer partner
-          and I are building it properly, and we are getting close to where we want it to be.
-        </p>
-
-        <p>
           The goal has always been simple: build things that help the people around me.
           Better experiences, better digital tools, better ways to track engagement and
           improve what is not working. Make things that people actually want to use.
-          Eventually we want this to cover every industry where a better digital experience
-          is overdue, which is most of them.
+          I keep building because it makes me a better strategist. You understand what
+          is possible when you have had to make it work yourself.
         </p>
 
-        <p>
-          I keep building things because I think it makes me a better strategist.
-          You understand what is possible when you have had to make it work yourself.
-        </p>
+        <div class="projects">
+          <p class="section-label">Active Projects</p>
+          <div class="project-list">
 
-        <p>
-          I left London for Málaga a few years ago. My little family is the centre of it.
-          Two boys, a love for sailing in Croatia when summer allows, and a snowboard
-          that gets used more than it should. I do the same work, at the same level,
-          from a much better view.
-        </p>
+            <div class="project-row">
+              <div class="project-header">
+                <a href="https://francescospelta.com" target="_blank" rel="noopener" class="project-name">francescospelta.com</a>
+                <span class="project-role">Co-owner</span>
+              </div>
+              <p class="project-desc">A luxury food brand co-founded with Francesco Spelta. Norwegian salmon, marinated in coffee, treated in Milan, and sold exclusively to the luxury yacht market. A product with a precise provenance and a very deliberate audience.</p>
+            </div>
+
+            <div class="project-row">
+              <div class="project-header">
+                <a href="https://octopusmenu.com" target="_blank" rel="noopener" class="project-name">octopusmenu.com</a>
+                <span class="project-role">Co-owner</span>
+              </div>
+              <p class="project-desc">A QR menu platform built for restaurants, live in the UK. The idea is simple: bring the digital experience to hospitality and save everyone's time. Designed from scratch with a developer partner, built to actually work in a real environment.</p>
+            </div>
+
+            <div class="project-row">
+              <div class="project-header">
+                <a href="https://onelovegallery.com" target="_blank" rel="noopener" class="project-name">onelovegallery.com</a>
+                <span class="project-role">Founder</span>
+              </div>
+              <p class="project-desc">A charity that sells art to fund humanitarian projects. Nine completed across Africa, Asia, and Brazil: orphanages, water wells, community infrastructure. Started because giving back should not be an afterthought.</p>
+            </div>
+
+            <div class="project-row">
+              <div class="project-header">
+                <span class="project-name project-name--plain">Classy Agency, USA</span>
+                <span class="project-role">Performance Lead</span>
+              </div>
+              <p class="project-desc">Leading paid media strategy and team across Google, Meta, and Shopping for e-commerce brands. Multi-million pound campaigns. The work is the results, and the results are in the people who understand the work.</p>
+            </div>
+
+          </div>
+        </div>
 
         <p>
           I write here because thinking in public forces clarity. If you're reading this and
@@ -155,7 +185,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     height: 128px;
     border-radius: 50%;
     object-fit: cover;
-    object-position: center top;
+    object-position: center 20%;
     border: 3px solid #3a3a3a;
     outline: 1px solid #252525;
     box-shadow: 0 0 0 6px #1a1a1a;
@@ -193,6 +223,87 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   .story a:hover {
     text-decoration-color: var(--accent);
     color: var(--text);
+  }
+
+  .projects {
+    margin-top: 1rem;
+  }
+
+  .section-label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  .project-list {
+    border: 1px solid var(--border);
+  }
+
+  .project-row {
+    padding: 1.1rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .project-row:last-child {
+    border-bottom: none;
+  }
+
+  .project-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .project-name {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .project-name:hover {
+    color: var(--accent-hover);
+    text-decoration: none;
+  }
+
+  .project-list a.project-name {
+    text-decoration: none;
+  }
+
+  .project-list a.project-name:hover {
+    color: var(--accent-hover);
+    text-decoration: none;
+  }
+
+  .project-name--plain {
+    color: var(--accent);
+  }
+
+  .project-role {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .project-desc {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin: 0;
   }
 
   .credentials {
