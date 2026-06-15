@@ -1,0 +1,261 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const categories = ['All', ...Array.from(new Set(posts.map(p => p.data.category).filter(Boolean)))];
+
+const formatDate = (date: Date) =>
+  date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+---
+
+<BaseLayout
+  title="Writing"
+  description="Essays and notes on performance marketing, AI, and software."
+>
+  <div class="container">
+    <section class="page">
+      <header class="page-header">
+        <h1>Writing</h1>
+        <p>Notes on performance marketing, AI, and building software.</p>
+      </header>
+
+      <div class="filter-bar">
+        {categories.map((cat) => (
+          <button class="filter-btn" class:list={[{ active: cat === 'All' }]} data-category={cat}>
+            {cat}
+          </button>
+        ))}
+      </div>
+
+      {posts.length > 0 ? (
+        <ul class="post-list">
+          {posts.map((post) => (
+            <li data-category={post.data.category ?? 'Performance Marketing'}>
+              <a href={`/writing/${post.id}`} class="post-row">
+                <div class="post-thumb">
+                  <img src={post.data.image ?? `/og/${post.id}.png`} alt={post.data.title} loading="lazy" />
+                </div>
+                <div class="post-main">
+                  <div class="post-meta">
+                    <time>{formatDate(post.data.date)}</time>
+                    <span class="category-pill">{post.data.category}</span>
+                  </div>
+                  <h2>{post.data.title}</h2>
+                  <p>{post.data.description}</p>
+                </div>
+              </a>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p class="empty">Writing incoming.</p>
+      )}
+    </section>
+  </div>
+</BaseLayout>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+  const items = document.querySelectorAll<HTMLLIElement>('.post-list li');
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const selected = btn.dataset.category ?? 'All';
+      items.forEach(item => {
+        item.style.display =
+          selected === 'All' || item.dataset.category === selected ? '' : 'none';
+      });
+    });
+  });
+</script>
+
+<style>
+  .page {
+    padding: 4rem 0 6rem;
+    max-width: 760px;
+  }
+
+  .page-header {
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+  }
+
+  .page-header p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+  }
+
+  .filter-bar {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  .filter-btn {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.4rem 0.9rem;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: border-color 0.15s, color 0.15s, background 0.15s;
+  }
+
+  .filter-btn:hover {
+    border-color: var(--accent);
+    color: var(--text);
+  }
+
+  .filter-btn.active {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(75, 158, 255, 0.06);
+  }
+
+  .post-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+  }
+
+  .post-row {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    background: var(--bg);
+    transition: background 0.15s;
+  }
+
+  .post-row:hover {
+    background: var(--surface);
+    color: inherit;
+  }
+
+  .post-row:hover h2 {
+    color: var(--accent);
+  }
+
+  .post-thumb {
+    width: 200px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-right: 1px solid var(--border);
+  }
+
+  .post-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left top;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .post-row:hover .post-thumb img {
+    transform: scale(1.02);
+  }
+
+  .post-main {
+    flex: 1;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .post-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .post-row h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text);
+    transition: color 0.15s;
+    line-height: 1.3;
+  }
+
+  .post-row p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  time {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+  }
+
+  .category-pill {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--accent);
+    opacity: 0.7;
+  }
+
+  .empty {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    padding-top: 2rem;
+  }
+
+  @media (max-width: 640px) {
+    .page {
+      padding: 2.5rem 0 4rem;
+    }
+
+    .filter-bar {
+      gap: 0.4rem;
+    }
+
+    .filter-btn {
+      font-size: 0.65rem;
+      padding: 0.35rem 0.7rem;
+    }
+
+    .post-row {
+      flex-direction: column;
+    }
+
+    .post-thumb {
+      width: 100%;
+      height: 180px;
+      border-right: none;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .post-main {
+      padding: 1.25rem;
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .post-thumb {
+      width: 160px;
+    }
+  }
+</style>

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#0A0A0A"/>
+
+  <!-- Left: generic prompt in, generic output -->
+  <text x="168" y="72" text-anchor="middle" font-family="monospace" font-size="10" fill="#555555" letter-spacing="0.08em">GENERIC INPUT</text>
+
+  <rect x="88" y="86" width="160" height="52" rx="3" fill="#111111" stroke="#333333" stroke-width="1"/>
+  <text x="168" y="107" text-anchor="middle" font-family="monospace" font-size="8" fill="#333333">"write a campaign brief"</text>
+  <text x="168" y="121" text-anchor="middle" font-family="monospace" font-size="8" fill="#333333">"analyse this account"</text>
+  <text x="168" y="134" text-anchor="middle" font-family="monospace" font-size="8" fill="#1E1E1E">"generate ad copy"</text>
+
+  <!-- Arrow down to AI -->
+  <line x1="168" y1="138" x2="168" y2="185" stroke="#1E1E1E" stroke-width="1.5"/>
+  <polygon points="164,185 168,193 172,185" fill="#1E1E1E"/>
+
+  <!-- AI box -->
+  <rect x="118" y="193" width="100" height="36" rx="3" fill="#111111" stroke="#1E1E1E" stroke-width="1.5"/>
+  <text x="168" y="216" text-anchor="middle" font-family="monospace" font-size="11" fill="#333333">AI</text>
+
+  <!-- Arrow to output -->
+  <line x1="168" y1="229" x2="168" y2="272" stroke="#1E1E1E" stroke-width="1.5"/>
+  <polygon points="164,272 168,280 172,272" fill="#1E1E1E"/>
+
+  <!-- Generic output -->
+  <rect x="78" y="280" width="180" height="76" rx="3" fill="#111111" stroke="#333333" stroke-width="1"/>
+  <text x="168" y="300" text-anchor="middle" font-family="monospace" font-size="8" fill="#333333">technically correct</text>
+  <text x="168" y="315" text-anchor="middle" font-family="monospace" font-size="8" fill="#2a2a2a">contextually wrong</text>
+  <text x="168" y="330" text-anchor="middle" font-family="monospace" font-size="8" fill="#222222">misses nuance</text>
+  <text x="168" y="345" text-anchor="middle" font-family="monospace" font-size="8" fill="#1a1a1a">ignores edge cases</text>
+
+  <!-- Centre divider -->
+  <line x1="400" y1="60" x2="400" y2="430" stroke="#1E1E1E" stroke-width="1" stroke-dasharray="6 4"/>
+
+  <!-- Right: documented knowledge + AI = sharp output -->
+  <text x="596" y="72" text-anchor="middle" font-family="monospace" font-size="10" fill="#4B9EFF" letter-spacing="0.08em">DOCUMENTED KNOWLEDGE</text>
+
+  <!-- Knowledge blocks stacked -->
+  <rect x="456" y="86" width="280" height="22" rx="2" fill="#0e1825" stroke="#4B9EFF" stroke-width="1" opacity="0.9"/>
+  <text x="596" y="101" text-anchor="middle" font-family="monospace" font-size="8" fill="#4B9EFF">client: branded search excluded from ROAS target</text>
+
+  <rect x="456" y="112" width="280" height="22" rx="2" fill="#0e1825" stroke="#4B9EFF" stroke-width="1" opacity="0.75"/>
+  <text x="596" y="127" text-anchor="middle" font-family="monospace" font-size="8" fill="#4B9EFF">uk audience outperforms DE in Q3, reverses Q4</text>
+
+  <rect x="456" y="138" width="280" height="22" rx="2" fill="#0e1825" stroke="#4B9EFF" stroke-width="1" opacity="0.6"/>
+  <text x="596" y="153" text-anchor="middle" font-family="monospace" font-size="8" fill="#4B9EFF">PMax: exclude brand kws or cannabilises search</text>
+
+  <rect x="456" y="164" width="280" height="22" rx="2" fill="#111111" stroke="#333333" stroke-width="1" opacity="0.5"/>
+  <text x="596" y="179" text-anchor="middle" font-family="monospace" font-size="8" fill="#555555">+ gotchas · edge cases · client preferences</text>
+
+  <!-- Arrow to AI -->
+  <line x1="596" y1="186" x2="596" y2="208" stroke="#4B9EFF" stroke-width="1.5" opacity="0.6"/>
+  <polygon points="592,208 596,216 600,208" fill="#4B9EFF" opacity="0.6"/>
+
+  <!-- AI box right -->
+  <rect x="546" y="216" width="100" height="36" rx="3" fill="#0e1825" stroke="#4B9EFF" stroke-width="1.5"/>
+  <text x="596" y="239" text-anchor="middle" font-family="monospace" font-size="11" fill="#4B9EFF">AI</text>
+
+  <!-- Arrow to sharp output -->
+  <line x1="596" y1="252" x2="596" y2="272" stroke="#4B9EFF" stroke-width="1.5" opacity="0.6"/>
+  <polygon points="592,272 596,280 600,272" fill="#4B9EFF" opacity="0.6"/>
+
+  <!-- Sharp output -->
+  <rect x="456" y="280" width="280" height="76" rx="3" fill="#0e1825" stroke="#4B9EFF" stroke-width="1.5"/>
+  <text x="596" y="300" text-anchor="middle" font-family="monospace" font-size="8" fill="#4B9EFF">contextually accurate</text>
+  <text x="596" y="315" text-anchor="middle" font-family="monospace" font-size="8" fill="#4B9EFF" opacity="0.8">accounts for exceptions</text>
+  <text x="596" y="330" text-anchor="middle" font-family="monospace" font-size="8" fill="#4B9EFF" opacity="0.65">reflects real business rules</text>
+  <text x="596" y="345" text-anchor="middle" font-family="monospace" font-size="8" fill="#4B9EFF" opacity="0.5">improves over time</text>
+
+  <!-- Bottom note -->
+  <text x="96" y="440" font-family="monospace" font-size="11" fill="#555555">THE TECHNOLOGY IS A COMMODITY</text>
+  <text x="96" y="460" font-family="monospace" font-size="11" fill="#4B9EFF">THE KNOWLEDGE</text>
+  <text x="96" y="460" font-family="monospace" font-size="11" fill="#555555">               IS NOT</text>
+</svg>

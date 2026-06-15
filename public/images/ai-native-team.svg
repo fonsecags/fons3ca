@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#0A0A0A"/>
+
+  <!-- Before: tall hierarchy (left) -->
+  <!-- Label -->
+  <text x="168" y="80" text-anchor="middle" font-family="monospace" font-size="10" fill="#555555" letter-spacing="0.1em">BEFORE</text>
+
+  <!-- Hierarchy boxes top to bottom -->
+  <rect x="128" y="96" width="80" height="28" rx="2" fill="#111111" stroke="#333333" stroke-width="1"/>
+  <text x="168" y="115" text-anchor="middle" font-family="monospace" font-size="9" fill="#555555">DIRECTOR</text>
+
+  <line x1="168" y1="124" x2="168" y2="140" stroke="#1E1E1E" stroke-width="1"/>
+
+  <rect x="118" y="140" width="100" height="28" rx="2" fill="#111111" stroke="#333333" stroke-width="1"/>
+  <text x="168" y="159" text-anchor="middle" font-family="monospace" font-size="9" fill="#555555">MANAGER</text>
+
+  <line x1="168" y1="168" x2="168" y2="184" stroke="#1E1E1E" stroke-width="1"/>
+
+  <rect x="108" y="184" width="120" height="28" rx="2" fill="#111111" stroke="#333333" stroke-width="1"/>
+  <text x="168" y="203" text-anchor="middle" font-family="monospace" font-size="9" fill="#555555">TEAM LEAD</text>
+
+  <line x1="168" y1="212" x2="168" y2="228" stroke="#1E1E1E" stroke-width="1"/>
+
+  <!-- Three workers -->
+  <line x1="96" y1="228" x2="240" y2="228" stroke="#1E1E1E" stroke-width="1"/>
+  <line x1="96" y1="228" x2="96" y2="244" stroke="#1E1E1E" stroke-width="1"/>
+  <line x1="168" y1="228" x2="168" y2="244" stroke="#1E1E1E" stroke-width="1"/>
+  <line x1="240" y1="228" x2="240" y2="244" stroke="#1E1E1E" stroke-width="1"/>
+
+  <rect x="56" y="244" width="80" height="28" rx="2" fill="#111111" stroke="#1E1E1E" stroke-width="1"/>
+  <text x="96" y="263" text-anchor="middle" font-family="monospace" font-size="9" fill="#333333">EXECUTER</text>
+  <rect x="128" y="244" width="80" height="28" rx="2" fill="#111111" stroke="#1E1E1E" stroke-width="1"/>
+  <text x="168" y="263" text-anchor="middle" font-family="monospace" font-size="9" fill="#333333">EXECUTER</text>
+  <rect x="200" y="244" width="80" height="28" rx="2" fill="#111111" stroke="#1E1E1E" stroke-width="1"/>
+  <text x="240" y="263" text-anchor="middle" font-family="monospace" font-size="9" fill="#333333">EXECUTER</text>
+
+  <!-- Output label -->
+  <text x="168" y="310" text-anchor="middle" font-family="monospace" font-size="9" fill="#333333">OUTPUT CONSTRAINED</text>
+
+  <!-- Arrow in middle -->
+  <text x="340" y="210" text-anchor="middle" font-family="monospace" font-size="22" fill="#4B9EFF" opacity="0.5">+AI</text>
+  <line x1="310" y1="230" x2="370" y2="230" stroke="#4B9EFF" stroke-width="1.5" opacity="0.4"/>
+  <polygon points="370,226 378,230 370,234" fill="#4B9EFF" opacity="0.4"/>
+
+  <!-- After: flat + AI (right) -->
+  <text x="580" y="80" text-anchor="middle" font-family="monospace" font-size="10" fill="#4B9EFF" letter-spacing="0.1em">AFTER</text>
+
+  <!-- Flat structure - 3 judgment roles side by side -->
+  <rect x="430" y="140" width="100" height="36" rx="2" fill="#0e1825" stroke="#4B9EFF" stroke-width="1.5"/>
+  <text x="480" y="157" text-anchor="middle" font-family="monospace" font-size="9" fill="#4B9EFF">JUDGMENT</text>
+  <text x="480" y="169" text-anchor="middle" font-family="monospace" font-size="8" fill="#4B9EFF" opacity="0.6">legal / risk</text>
+
+  <rect x="545" y="140" width="100" height="36" rx="2" fill="#0e1825" stroke="#4B9EFF" stroke-width="1.5"/>
+  <text x="595" y="157" text-anchor="middle" font-family="monospace" font-size="9" fill="#4B9EFF">JUDGMENT</text>
+  <text x="595" y="169" text-anchor="middle" font-family="monospace" font-size="8" fill="#4B9EFF" opacity="0.6">product / strategy</text>
+
+  <rect x="660" y="140" width="100" height="36" rx="2" fill="#0e1825" stroke="#4B9EFF" stroke-width="1.5"/>
+  <text x="710" y="157" text-anchor="middle" font-family="monospace" font-size="9" fill="#4B9EFF">JUDGMENT</text>
+  <text x="710" y="169" text-anchor="middle" font-family="monospace" font-size="8" fill="#4B9EFF" opacity="0.6">domain expertise</text>
+
+  <!-- AI layer below doing execution -->
+  <line x1="480" y1="176" x2="480" y2="220" stroke="#4B9EFF" stroke-width="1" opacity="0.3" stroke-dasharray="4 3"/>
+  <line x1="595" y1="176" x2="595" y2="220" stroke="#4B9EFF" stroke-width="1" opacity="0.3" stroke-dasharray="4 3"/>
+  <line x1="710" y1="176" x2="710" y2="220" stroke="#4B9EFF" stroke-width="1" opacity="0.3" stroke-dasharray="4 3"/>
+
+  <rect x="430" y="220" width="330" height="40" rx="3" fill="#111111" stroke="#1E1E1E" stroke-width="1"/>
+  <text x="595" y="237" text-anchor="middle" font-family="monospace" font-size="9" fill="#555555">AI EXECUTION LAYER</text>
+  <text x="595" y="251" text-anchor="middle" font-family="monospace" font-size="8" fill="#333333">code · reports · copy · analysis · review</text>
+
+  <!-- Output -->
+  <line x1="595" y1="260" x2="595" y2="276" stroke="#4B9EFF" stroke-width="1.5" opacity="0.5"/>
+  <rect x="495" y="276" width="200" height="28" rx="2" fill="#0e1825" stroke="#4B9EFF" stroke-width="1" opacity="0.8"/>
+  <text x="595" y="295" text-anchor="middle" font-family="monospace" font-size="9" fill="#4B9EFF">JUDGMENT CONSTRAINED</text>
+
+  <!-- Bottom note -->
+  <text x="96" y="440" font-family="monospace" font-size="11" fill="#555555">REMOVE THE OUTPUT BOTTLENECK</text>
+  <text x="96" y="460" font-family="monospace" font-size="11" fill="#4B9EFF">BOTTLENECK BECOMES</text>
+  <text x="96" y="460" font-family="monospace" font-size="11" fill="#555555">                   JUDGMENT</text>
+</svg>

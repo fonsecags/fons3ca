@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#0A0A0A"/>
+
+  <!-- Background grid dots -->
+  <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle cx="20" cy="20" r="1" fill="#1E1E1E"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- Signal lines converging to a point -->
+  <g opacity="0.15">
+    <line x1="0" y1="80"  x2="680" y2="315" stroke="#4B9EFF" stroke-width="1"/>
+    <line x1="0" y1="160" x2="680" y2="315" stroke="#4B9EFF" stroke-width="1"/>
+    <line x1="0" y1="240" x2="680" y2="315" stroke="#4B9EFF" stroke-width="1"/>
+    <line x1="0" y1="320" x2="680" y2="315" stroke="#4B9EFF" stroke-width="1"/>
+    <line x1="0" y1="400" x2="680" y2="315" stroke="#4B9EFF" stroke-width="1"/>
+    <line x1="0" y1="480" x2="680" y2="315" stroke="#4B9EFF" stroke-width="1"/>
+    <line x1="0" y1="560" x2="680" y2="315" stroke="#4B9EFF" stroke-width="1"/>
+  </g>
+
+  <!-- Stronger lines -->
+  <g opacity="0.5">
+    <line x1="0" y1="160" x2="680" y2="315" stroke="#4B9EFF" stroke-width="1.5"/>
+    <line x1="0" y1="315" x2="680" y2="315" stroke="#4B9EFF" stroke-width="2"/>
+    <line x1="0" y1="470" x2="680" y2="315" stroke="#4B9EFF" stroke-width="1.5"/>
+  </g>
+
+  <!-- Lines dispersing out from focal point -->
+  <g opacity="0.12">
+    <line x1="680" y1="315" x2="1200" y2="100"  stroke="#E8E8E8" stroke-width="1"/>
+    <line x1="680" y1="315" x2="1200" y2="180"  stroke="#E8E8E8" stroke-width="1"/>
+    <line x1="680" y1="315" x2="1200" y2="260"  stroke="#E8E8E8" stroke-width="1"/>
+    <line x1="680" y1="315" x2="1200" y2="315"  stroke="#E8E8E8" stroke-width="1"/>
+    <line x1="680" y1="315" x2="1200" y2="370"  stroke="#E8E8E8" stroke-width="1"/>
+    <line x1="680" y1="315" x2="1200" y2="440"  stroke="#E8E8E8" stroke-width="1"/>
+    <line x1="680" y1="315" x2="1200" y2="520"  stroke="#E8E8E8" stroke-width="1"/>
+  </g>
+
+  <!-- Focal point rings -->
+  <circle cx="680" cy="315" r="60" fill="none" stroke="#4B9EFF" stroke-width="1" opacity="0.1"/>
+  <circle cx="680" cy="315" r="36" fill="none" stroke="#4B9EFF" stroke-width="1" opacity="0.2"/>
+  <circle cx="680" cy="315" r="16" fill="none" stroke="#4B9EFF" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="680" cy="315" r="5"  fill="#4B9EFF" opacity="0.9"/>
+
+  <!-- Pulse rings animated feel -->
+  <circle cx="680" cy="315" r="80"  fill="none" stroke="#4B9EFF" stroke-width="0.5" opacity="0.06"/>
+  <circle cx="680" cy="315" r="120" fill="none" stroke="#4B9EFF" stroke-width="0.5" opacity="0.04"/>
+
+  <!-- Data points on left lines -->
+  <g fill="#4B9EFF" opacity="0.7">
+    <circle cx="120" cy="160" r="3"/>
+    <circle cx="240" cy="208" r="2.5"/>
+    <circle cx="360" cy="256" r="2"/>
+    <circle cx="120" cy="315" r="3"/>
+    <circle cx="240" cy="315" r="2.5"/>
+    <circle cx="480" cy="315" r="2"/>
+    <circle cx="120" cy="470" r="3"/>
+    <circle cx="240" cy="422" r="2.5"/>
+    <circle cx="360" cy="374" r="2"/>
+  </g>
+
+  <!-- Bottom label -->
+  <text x="60" y="590" font-family="monospace" font-size="11" fill="#333333" letter-spacing="3">SIGNAL</text>
+  <line x1="140" y1="585" x2="400" y2="585" stroke="#1E1E1E" stroke-width="1"/>
+</svg>

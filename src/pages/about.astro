@@ -1,0 +1,265 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="About"
+  description="Gustavo Fonseca, performance marketing specialist. 16 years in London, now remote from Málaga, South Spain."
+>
+  <div class="container">
+    <section class="page">
+
+      <header class="page-header">
+        <p class="eyebrow">ABOUT</p>
+        <div class="header-inner">
+          <div>
+            <h1>Gustavo Fonseca</h1>
+          </div>
+          <img src="/gustavo.png" alt="Gustavo Fonseca" class="avatar" />
+        </div>
+      </header>
+
+      <div class="story">
+
+        <p class="lead">
+          I grew up in Brazil, studied web marketing, and moved to London with the intention of
+          staying a few years. That was 16 years ago.
+        </p>
+
+        <p>
+          London shaped how I think about this work. I didn't learn performance marketing in
+          a classroom. I learned it by running campaigns for some of the world's most recognised
+          brands: Star Trek, Star Wars, Marvel, DC Comics, Doctor Who, Game of Thrones, WWE,
+          Back to the Future. Global audiences, multiple franchises at once, subscription models,
+          one-off purchases. The kind of breadth that forces you to stop thinking in templates
+          and start thinking in principles.
+        </p>
+
+        <p>
+          From there I moved into automotive, leading digital strategy and lead generation for
+          Renault. A completely different world. In e-commerce, someone either buys or they don't.
+          In automotive, a customer might spend six months in your funnel before they walk into a
+          showroom. I learned to read signals differently, to build programmes that kept people
+          warm across a much longer journey.
+        </p>
+
+        <p>
+          Somewhere in between all of this, my best friend and I started building something.
+          Not in an office, not with funding. After work, over coffee at Pret a Manger on
+          Victoria Street. Every evening, tired from the day, but we kept going. The idea
+          was a blockchain-based platform for distributed teams: work gets delivered, payment
+          gets released automatically through smart contracts, no middleman, no disputes.
+          It was ahead of its time. A group in India acquired the platform and the underlying
+          technology for £6 million before it had even launched. I was not yet 30.
+        </p>
+
+        <p>
+          That changed things. Not because of the money, but because of what it made possible.
+          I had done well early. The question became what to do with that. The answer was
+          <a href="https://onelovegallery.com" target="_blank" rel="noopener">One Love Gallery</a>,
+          a charity that sells art to fund humanitarian projects. Nine completed so far across
+          Africa, Asia and Brazil: orphanages, water wells, community infrastructure.
+          I wanted to give something back before I was too busy to remember why it mattered.
+        </p>
+
+        <p>
+          Today I lead performance marketing at Classy Llama, managing multi-million pound
+          campaigns across Google, Meta and Shopping for e-commerce brands. I care as much about
+          building the team as I do about the results. People who understand the work deeply
+          produce better outcomes. That's not a soft belief, it shows in the numbers.
+        </p>
+
+        <p>
+          I am also building <a href="https://octopusmenu.com" target="_blank" rel="noopener">octopusmenu.com</a>,
+          a QR menu platform for restaurants, currently live in the UK. My developer partner
+          and I are building it properly, and we are getting close to where we want it to be.
+        </p>
+
+        <p>
+          The goal has always been simple: build things that help the people around me.
+          Better experiences, better digital tools, better ways to track engagement and
+          improve what is not working. Make things that people actually want to use.
+          Eventually we want this to cover every industry where a better digital experience
+          is overdue, which is most of them.
+        </p>
+
+        <p>
+          I keep building things because I think it makes me a better strategist.
+          You understand what is possible when you have had to make it work yourself.
+        </p>
+
+        <p>
+          I left London for Málaga a few years ago. My little family is the centre of it.
+          Two boys, a love for sailing in Croatia when summer allows, and a snowboard
+          that gets used more than it should. I do the same work, at the same level,
+          from a much better view.
+        </p>
+
+        <p>
+          I write here because thinking in public forces clarity. If you're reading this and
+          want to talk, I'm at <a href="mailto:gustavo@fons3ca.com">gustavo@fons3ca.com</a>
+          or on <a href="https://www.linkedin.com/in/gustavofonseca85/" target="_blank" rel="noopener">LinkedIn</a>.
+        </p>
+
+        <div class="credentials">
+          <p class="credentials-label">Education</p>
+          <ul>
+            <li>MSc Digital Transformation, University of Cambridge</li>
+            <li>MSc Digital Marketing, Digital Marketing Institute, London</li>
+            <li>PG Project Management, The Open University, London</li>
+            <li>BA Web Marketing, Unibratec, Brazil</li>
+            <li>Advanced Google Ads &amp; Meta, Jellyfish, London</li>
+            <li>Analytics, Measurelab, Brighton</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .page {
+    padding: 5rem 0 7rem;
+    max-width: 660px;
+  }
+
+  .page-header {
+    margin-bottom: 3.5rem;
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--accent);
+    letter-spacing: 0.14em;
+    margin-bottom: 1.25rem;
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--text);
+  }
+
+  .avatar {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 3px solid #3a3a3a;
+    outline: 1px solid #252525;
+    box-shadow: 0 0 0 6px #1a1a1a;
+    flex-shrink: 0;
+  }
+
+  .story {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .lead {
+    font-size: 1.2rem;
+    color: var(--text);
+    line-height: 1.7;
+    font-weight: 400;
+  }
+
+  .story p {
+    font-size: 1rem;
+    color: #AAAAAA;
+    line-height: 1.85;
+    margin: 0;
+  }
+
+  .story a {
+    color: var(--text);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: var(--border);
+    transition: text-decoration-color 0.15s;
+  }
+
+  .story a:hover {
+    text-decoration-color: var(--accent);
+    color: var(--text);
+  }
+
+  .credentials {
+    margin-top: 2rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .credentials-label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+  }
+
+  .credentials ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .credentials li {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  @media (max-width: 640px) {
+    .page {
+      padding: 2.5rem 0 4rem;
+    }
+
+    .page-header {
+      margin-bottom: 2rem;
+    }
+
+    .header-inner {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 1.25rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+    }
+
+    .lead {
+      font-size: 1.05rem;
+    }
+  }
+
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .page {
+      padding: 3.5rem 0 5rem;
+    }
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+    }
+  }
+</style>

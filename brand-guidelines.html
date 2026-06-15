@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FONS3CA — Brand Guidelines</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:          #0A0A0A;
+      --surface:     #111111;
+      --surface-2:   #181818;
+      --border:      #1E1E1E;
+      --text:        #E8E8E8;
+      --text-muted:  #555555;
+      --text-dim:    #333333;
+      --accent:      #4B9EFF;
+      --accent-hover:#6CB2FF;
+      --font-sans:   'Inter', system-ui, sans-serif;
+      --font-mono:   'JetBrains Mono', monospace;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      line-height: 1.7;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* Layout */
+    .wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* Cover */
+    .cover {
+      border-bottom: 1px solid var(--border);
+      padding: 6rem 0 5rem;
+    }
+
+    .cover-label {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.14em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    .cover-logo {
+      font-family: var(--font-mono);
+      font-size: clamp(3.5rem, 8vw, 6rem);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      line-height: 1;
+      color: var(--text);
+    }
+
+    .cover-logo .three { color: var(--accent); }
+
+    .cover-meta {
+      margin-top: 2rem;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      letter-spacing: 0.06em;
+    }
+
+    /* Section */
+    .section {
+      padding: 5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section:last-child { border-bottom: none; }
+
+    .section-label {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 3rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .section-title {
+      font-size: 1.75rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      max-width: 560px;
+      line-height: 1.75;
+      margin-bottom: 3rem;
+    }
+
+    /* Grid */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); }
+
+    .cell { background: var(--bg); padding: 2rem; }
+    .cell-surface { background: var(--surface); }
+
+    /* ---- LOGO SECTION ---- */
+
+    .logo-showcase {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin-bottom: 2rem;
+    }
+
+    .logo-variant {
+      padding: 4rem 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .logo-variant.on-dark  { background: var(--bg); }
+    .logo-variant.on-surface { background: var(--surface); }
+    .logo-variant.on-light { background: #F5F5F5; }
+    .logo-variant.on-accent { background: var(--accent); }
+
+    .logo-mark {
+      font-family: var(--font-mono);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .logo-mark.sz-lg { font-size: 2.5rem; }
+    .logo-mark.sz-md { font-size: 1.5rem; }
+    .logo-mark.sz-sm { font-size: 1rem; }
+    .logo-mark.sz-xs { font-size: 0.75rem; }
+
+    .logo-mark .three-blue  { color: var(--accent); }
+    .logo-mark .three-white { color: #ffffff; }
+    .logo-mark .three-dark  { color: #0A0A0A; }
+    .logo-mark .text-dark   { color: #0A0A0A; }
+    .logo-mark .text-white  { color: #ffffff; }
+
+    .variant-label {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      opacity: 0.45;
+      color: var(--text);
+    }
+
+    .logo-variant.on-light .variant-label,
+    .logo-variant.on-accent .variant-label { color: #000; opacity: 0.5; }
+
+    .size-row {
+      display: flex;
+      align-items: baseline;
+      gap: 3rem;
+      flex-wrap: wrap;
+      padding: 2.5rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+    }
+
+    /* ---- COLOR SECTION ---- */
+
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin-bottom: 2rem;
+    }
+
+    .swatch {
+      padding: 0;
+    }
+
+    .swatch-block {
+      height: 120px;
+    }
+
+    .swatch-info {
+      padding: 1.25rem;
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+    }
+
+    .swatch-name {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 0.3rem;
+    }
+
+    .swatch-hex {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--accent);
+      margin-bottom: 0.3rem;
+    }
+
+    .swatch-token {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--text-muted);
+    }
+
+    .swatch-use {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 0.5rem;
+      line-height: 1.5;
+    }
+
+    /* ---- TYPOGRAPHY SECTION ---- */
+
+    .type-specimen {
+      border: 1px solid var(--border);
+      margin-bottom: 1px;
+    }
+
+    .type-row {
+      display: flex;
+      align-items: baseline;
+      gap: 2rem;
+      padding: 1.75rem 2rem;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .type-row:last-child { border-bottom: none; }
+
+    .type-meta {
+      width: 160px;
+      flex-shrink: 0;
+    }
+
+    .type-role {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .type-spec {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .type-sample { flex: 1; color: var(--text); }
+
+    .ts-display   { font-size: 3.5rem; font-weight: 800; letter-spacing: -0.04em; line-height: 1; }
+    .ts-h1        { font-size: 2rem;   font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; }
+    .ts-h2        { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; }
+    .ts-h3        { font-size: 1.2rem; font-weight: 600; letter-spacing: -0.02em; }
+    .ts-body      { font-size: 1rem;   font-weight: 400; line-height: 1.7; color: #AAAAAA; }
+    .ts-small     { font-size: 0.875rem; color: var(--text-muted); line-height: 1.6; }
+    .ts-mono      { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.08em; color: var(--accent); }
+    .ts-mono-label{ font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted); }
+
+    /* ---- UI PATTERNS ---- */
+
+    .pattern-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding: 2rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      margin-bottom: 1px;
+    }
+
+    .pattern-label {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      width: 120px;
+      flex-shrink: 0;
+    }
+
+    /* Pill */
+    .pill {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.8rem;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+    }
+
+    .pill-accent {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: rgba(75,158,255,0.06);
+    }
+
+    /* Category badge */
+    .badge {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      opacity: 0.8;
+    }
+
+    /* Divider */
+    .divider-sample {
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* Card */
+    .card-sample {
+      border: 1px solid var(--border);
+      background: var(--bg);
+      padding: 1.5rem;
+      max-width: 280px;
+    }
+
+    .card-sample time {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-sample h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.4rem;
+      line-height: 1.3;
+    }
+
+    .card-sample p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* CTA link */
+    .cta-link {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      transition: color 0.15s;
+    }
+
+    /* Nav sample */
+    .nav-sample {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 1.5rem;
+      border: 1px solid var(--border);
+      background: rgba(10,10,10,0.9);
+      margin-bottom: 1px;
+    }
+
+    .nav-sample-logo {
+      font-family: var(--font-mono);
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--text);
+    }
+
+    .nav-sample-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-sample-link {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+
+    .nav-sample-link.active { color: var(--text); }
+
+    /* ---- VOICE ---- */
+
+    .voice-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+
+    .voice-cell {
+      padding: 2rem;
+      background: var(--surface);
+    }
+
+    .voice-cell-label {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    .voice-cell-label.yes { color: var(--accent); }
+    .voice-cell-label.no  { color: var(--text-dim); }
+
+    .voice-cell ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .voice-cell li {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      padding-left: 1.25rem;
+      position: relative;
+    }
+
+    .voice-cell li::before {
+      content: attr(data-marker);
+      position: absolute;
+      left: 0;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+    }
+
+    .voice-cell.yes li::before { color: var(--accent); content: '+'; }
+    .voice-cell.no  li::before { color: var(--text-dim); content: '-'; }
+
+    /* ---- DONT / DO ---- */
+
+    .rule-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin-top: 2rem;
+    }
+
+    .rule-cell {
+      padding: 2rem;
+      background: var(--surface);
+    }
+
+    .rule-cell-label {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    .do-label   { color: var(--accent); }
+    .dont-label { color: var(--text-dim); }
+
+    .rule-logo {
+      font-family: var(--font-mono);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      font-size: 1.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .rule-caption {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .struck { text-decoration: line-through; opacity: 0.4; }
+
+    /* ---- SPACING ---- */
+
+    .spacing-row {
+      display: flex;
+      align-items: flex-end;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      padding: 2rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+    }
+
+    .space-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .space-vis {
+      background: rgba(75,158,255,0.15);
+      border: 1px solid rgba(75,158,255,0.3);
+      width: 32px;
+    }
+
+    .space-label {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      color: var(--text-muted);
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    /* Footer */
+    .bg-footer {
+      padding: 3rem 0;
+      border-top: 1px solid var(--border);
+      margin-top: 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer-logo {
+      font-family: var(--font-mono);
+      font-size: 0.875rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--text);
+    }
+
+    .footer-meta {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      color: var(--text-muted);
+      letter-spacing: 0.06em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cover -->
+  <div class="cover">
+    <div class="wrap">
+      <p class="cover-label">Brand Guidelines</p>
+      <div class="cover-logo">FONS<span class="three">3</span>CA</div>
+      <p class="cover-meta">v1.0 &nbsp;&nbsp;·&nbsp;&nbsp; June 2026 &nbsp;&nbsp;·&nbsp;&nbsp; fons3ca.com</p>
+    </div>
+  </div>
+
+  <!-- ================================================================ -->
+  <!-- 01 LOGO -->
+  <!-- ================================================================ -->
+  <div class="section">
+    <div class="wrap">
+      <p class="section-label">01 &nbsp; Logo</p>
+      <h2 class="section-title">The Mark</h2>
+      <p class="section-desc">
+        FONS3CA is set entirely in JetBrains Mono Bold. The numeral 3 is a permanent
+        substitution for the letter E and always renders in accent blue (#4B9EFF).
+        No other character is ever coloured separately.
+      </p>
+
+      <!-- Variants -->
+      <div class="logo-showcase">
+        <div class="logo-variant on-dark">
+          <span class="variant-label">Primary / Dark background</span>
+          <div class="logo-mark sz-lg">
+            FONS<span class="three-blue">3</span>CA
+          </div>
+        </div>
+        <div class="logo-variant on-surface">
+          <span class="variant-label">Surface background</span>
+          <div class="logo-mark sz-lg">
+            FONS<span class="three-blue">3</span>CA
+          </div>
+        </div>
+        <div class="logo-variant on-light">
+          <span class="variant-label">Light background</span>
+          <div class="logo-mark sz-lg text-dark">
+            FONS<span class="three-blue">3</span>CA
+          </div>
+        </div>
+        <div class="logo-variant on-accent">
+          <span class="variant-label">Accent background</span>
+          <div class="logo-mark sz-lg text-white">
+            FONS<span class="three-dark">3</span>CA
+          </div>
+        </div>
+      </div>
+
+      <!-- Sizes -->
+      <p style="font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.75rem;">Scale</p>
+      <div class="size-row">
+        <div class="logo-mark sz-lg">FONS<span class="three-blue">3</span>CA</div>
+        <div class="logo-mark sz-md">FONS<span class="three-blue">3</span>CA</div>
+        <div class="logo-mark sz-sm">FONS<span class="three-blue">3</span>CA</div>
+        <div class="logo-mark sz-xs">FONS<span class="three-blue">3</span>CA</div>
+      </div>
+
+      <!-- Do / Don't -->
+      <div class="rule-grid">
+        <div class="rule-cell">
+          <p class="rule-cell-label do-label">Do</p>
+          <div class="rule-logo">FONS<span style="color:var(--accent)">3</span>CA</div>
+          <p class="rule-caption">Always use JetBrains Mono Bold. Always colour the 3 in #4B9EFF. Keep letter-spacing at 0.08em.</p>
+        </div>
+        <div class="rule-cell">
+          <p class="rule-cell-label dont-label">Do not</p>
+          <div class="rule-logo struck" style="color:var(--text-dim)">Fons3ca</div>
+          <p class="rule-caption" style="margin-top:0.75rem">Never use sentence case, lowercase, or alternative fonts. Never remove the 3 or spell out the E. Never stretch or distort the letterforms.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================================================================ -->
+  <!-- 02 COLOUR -->
+  <!-- ================================================================ -->
+  <div class="section">
+    <div class="wrap">
+      <p class="section-label">02 &nbsp; Colour</p>
+      <h2 class="section-title">Palette</h2>
+      <p class="section-desc">
+        A near-black foundation with a single electric blue accent.
+        The palette is intentionally tight. No secondary accent colour exists.
+      </p>
+
+      <div class="color-grid">
+
+        <div class="swatch">
+          <div class="swatch-block" style="background:#0A0A0A; border-bottom: 1px solid #1E1E1E;"></div>
+          <div class="swatch-info">
+            <p class="swatch-name">Background</p>
+            <p class="swatch-hex">#0A0A0A</p>
+            <p class="swatch-token">--bg</p>
+            <p class="swatch-use">Page background. The deepest layer.</p>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <div class="swatch-block" style="background:#111111;"></div>
+          <div class="swatch-info">
+            <p class="swatch-name">Surface</p>
+            <p class="swatch-hex">#111111</p>
+            <p class="swatch-token">--surface</p>
+            <p class="swatch-use">Cards, panels, table rows on hover.</p>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <div class="swatch-block" style="background:#181818;"></div>
+          <div class="swatch-info">
+            <p class="swatch-name">Surface 2</p>
+            <p class="swatch-hex">#181818</p>
+            <p class="swatch-token">--surface-2</p>
+            <p class="swatch-use">Code blocks, inset elements.</p>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <div class="swatch-block" style="background:#1E1E1E;"></div>
+          <div class="swatch-info">
+            <p class="swatch-name">Border</p>
+            <p class="swatch-hex">#1E1E1E</p>
+            <p class="swatch-token">--border</p>
+            <p class="swatch-use">All lines, dividers, grid separators.</p>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <div class="swatch-block" style="background:#E8E8E8;"></div>
+          <div class="swatch-info">
+            <p class="swatch-name">Text</p>
+            <p class="swatch-hex">#E8E8E8</p>
+            <p class="swatch-token">--text</p>
+            <p class="swatch-use">Headlines, labels, primary body copy.</p>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <div class="swatch-block" style="background:#AAAAAA;"></div>
+          <div class="swatch-info">
+            <p class="swatch-name">Text Body</p>
+            <p class="swatch-hex">#AAAAAA</p>
+            <p class="swatch-token">(prose)</p>
+            <p class="swatch-use">Long-form article body text.</p>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <div class="swatch-block" style="background:#555555;"></div>
+          <div class="swatch-info">
+            <p class="swatch-name">Text Muted</p>
+            <p class="swatch-hex">#555555</p>
+            <p class="swatch-token">--text-muted</p>
+            <p class="swatch-use">Metadata, timestamps, secondary labels.</p>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <div class="swatch-block" style="background:#4B9EFF;"></div>
+          <div class="swatch-info">
+            <p class="swatch-name">Accent</p>
+            <p class="swatch-hex">#4B9EFF</p>
+            <p class="swatch-token">--accent</p>
+            <p class="swatch-use">Logo 3, links, active states, CTAs. Never overused.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================================================================ -->
+  <!-- 03 TYPOGRAPHY -->
+  <!-- ================================================================ -->
+  <div class="section">
+    <div class="wrap">
+      <p class="section-label">03 &nbsp; Typography</p>
+      <h2 class="section-title">Type System</h2>
+      <p class="section-desc">
+        Two typefaces only. Inter for all prose, headings, and UI text.
+        JetBrains Mono exclusively for labels, metadata, code, the logo, and monospaced UI elements.
+      </p>
+
+      <!-- Font families -->
+      <div class="grid-2" style="margin-bottom:2rem;">
+        <div class="cell" style="padding:2.5rem;">
+          <p style="font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:1.25rem;">Primary / Sans</p>
+          <p style="font-size:2.5rem;font-weight:800;letter-spacing:-0.03em;line-height:1.1;color:var(--text);margin-bottom:1rem;">Inter</p>
+          <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:0.5rem;">Weights used: 300, 400, 500, 600, 700, 800</p>
+          <p style="font-size:0.875rem;color:var(--text-muted);">Google Fonts · Variable available</p>
+        </div>
+        <div class="cell" style="padding:2.5rem;">
+          <p style="font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:1.25rem;">Secondary / Mono</p>
+          <p style="font-family:var(--font-mono);font-size:2.5rem;font-weight:700;letter-spacing:0.04em;line-height:1.1;color:var(--text);margin-bottom:1rem;">JetBrains</p>
+          <p style="font-size:0.875rem;color:var(--text-muted);margin-bottom:0.5rem;">Weights used: 400, 500, 700</p>
+          <p style="font-size:0.875rem;color:var(--text-muted);">Google Fonts · Ligatures disabled in UI</p>
+        </div>
+      </div>
+
+      <!-- Type scale -->
+      <div class="type-specimen">
+        <div class="type-row">
+          <div class="type-meta">
+            <span class="type-role">Display</span>
+            <span class="type-spec">Inter 800<br>clamp(3rem,6vw,5rem)<br>ls -0.04em · lh 1.0</span>
+          </div>
+          <div class="type-sample ts-display">Building sharper.</div>
+        </div>
+        <div class="type-row">
+          <div class="type-meta">
+            <span class="type-role">H1</span>
+            <span class="type-spec">Inter 800<br>2rem–2.5rem<br>ls -0.03em</span>
+          </div>
+          <div class="type-sample ts-h1">Performance, built.</div>
+        </div>
+        <div class="type-row">
+          <div class="type-meta">
+            <span class="type-role">H2</span>
+            <span class="type-spec">Inter 700<br>1.5rem<br>ls -0.02em</span>
+          </div>
+          <div class="type-sample ts-h2">What the numbers mean</div>
+        </div>
+        <div class="type-row">
+          <div class="type-meta">
+            <span class="type-role">H3</span>
+            <span class="type-spec">Inter 600<br>1.2rem<br>ls -0.02em</span>
+          </div>
+          <div class="type-sample ts-h3">The signal quality gap</div>
+        </div>
+        <div class="type-row">
+          <div class="type-meta">
+            <span class="type-role">Body</span>
+            <span class="type-spec">Inter 400<br>1rem / #AAAAAA<br>lh 1.7–1.85</span>
+          </div>
+          <div class="type-sample ts-body">Performance marketing runs on intent signals. The campaigns built for a simpler version of that behaviour are leaving results on the table.</div>
+        </div>
+        <div class="type-row">
+          <div class="type-meta">
+            <span class="type-role">Small</span>
+            <span class="type-spec">Inter 400<br>0.875rem<br>#555555</span>
+          </div>
+          <div class="type-sample ts-small">Metadata, descriptions, secondary labels. Kept brief.</div>
+        </div>
+        <div class="type-row">
+          <div class="type-meta">
+            <span class="type-role">Mono Label</span>
+            <span class="type-spec">JetBrains 700<br>0.7rem<br>ls 0.08em</span>
+          </div>
+          <div class="type-sample ts-mono">PERFORMANCE MARKETING · AI · DEV</div>
+        </div>
+        <div class="type-row">
+          <div class="type-meta">
+            <span class="type-role">Eyebrow</span>
+            <span class="type-spec">JetBrains 400<br>0.65rem<br>ls 0.14em · uppercase</span>
+          </div>
+          <div class="type-sample ts-mono-label">About &nbsp;&nbsp; Writing &nbsp;&nbsp; 12 Jun 2026</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================================================================ -->
+  <!-- 04 UI PATTERNS -->
+  <!-- ================================================================ -->
+  <div class="section">
+    <div class="wrap">
+      <p class="section-label">04 &nbsp; UI Patterns</p>
+      <h2 class="section-title">Components</h2>
+      <p class="section-desc">
+        All components use border lines, not shadows. Background fills are minimal.
+        The grid separator technique (1px gap + background on the parent) is the primary layout device.
+      </p>
+
+      <!-- Nav -->
+      <p style="font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.5rem;">Navigation</p>
+      <div class="nav-sample">
+        <span class="nav-sample-logo">FONS<span style="color:var(--accent)">3</span>CA</span>
+        <div class="nav-sample-links">
+          <span class="nav-sample-link active">Writing</span>
+          <span class="nav-sample-link">About</span>
+        </div>
+      </div>
+      <p style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-muted);padding:0.75rem 0 2rem;">Sticky · backdrop-filter blur(12px) · bg rgba(10,10,10,0.9)</p>
+
+      <!-- Pills / Badges -->
+      <div class="pattern-row" style="margin-bottom:1px;">
+        <span class="pattern-label">Filter pills</span>
+        <span class="pill pill-accent">All</span>
+        <span class="pill">Performance Marketing</span>
+        <span class="pill">AI</span>
+      </div>
+
+      <div class="pattern-row" style="margin-bottom:1px;">
+        <span class="pattern-label">Category badge</span>
+        <span class="badge">Performance Marketing</span>
+        <span class="badge">AI</span>
+      </div>
+
+      <div class="pattern-row" style="margin-bottom:1px;">
+        <span class="pattern-label">CTA link</span>
+        <span class="cta-link">Read my story →</span>
+        <span class="cta-link" style="margin-left:2rem;">All writing →</span>
+      </div>
+
+      <div class="pattern-row" style="margin-bottom:2rem;">
+        <span class="pattern-label">Divider</span>
+        <div class="divider-sample"></div>
+      </div>
+
+      <!-- Card -->
+      <p style="font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.75rem;">Post card</p>
+      <div style="display:flex;gap:1px;background:var(--border);border:1px solid var(--border);margin-bottom:2rem;">
+        <div class="card-sample" style="flex:1;">
+          <time>12 Jun 2026</time>
+          <h4>Meta Is Building Personal AI</h4>
+          <p>Meta's push toward personal superintelligence is not just a product announcement.</p>
+        </div>
+        <div class="card-sample" style="flex:1;">
+          <time>07 Jun 2026</time>
+          <h4>Why Meta's Hardware Race Matters</h4>
+          <p>Four custom AI chips in two years. Infrastructure is where performance lives.</p>
+        </div>
+        <div class="card-sample" style="flex:1;">
+          <time>02 Jun 2026</time>
+          <h4>How Meta Builds Its AI</h4>
+          <p>Rigorous testing compounds over time. The learning is worth more than the spend.</p>
+        </div>
+      </div>
+
+      <!-- Grid separator technique -->
+      <p style="font-family:var(--font-mono);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:0.75rem;">Grid separator technique</p>
+      <div style="font-size:0.8rem;color:var(--text-muted);background:var(--surface-2);border:1px solid var(--border);padding:1.25rem 1.5rem;font-family:var(--font-mono);line-height:1.8;">
+        parent: { background: #1E1E1E; gap: 1px; border: 1px solid #1E1E1E; }<br>
+        child:  { background: #0A0A0A; } &nbsp;/* gap + border create the lines */
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================================================================ -->
+  <!-- 05 SPACING -->
+  <!-- ================================================================ -->
+  <div class="section">
+    <div class="wrap">
+      <p class="section-label">05 &nbsp; Spacing</p>
+      <h2 class="section-title">Space Scale</h2>
+      <p class="section-desc">Based on a 0.5rem (8px) unit. Generous vertical rhythm creates the sense of calm the brand depends on.</p>
+
+      <div class="spacing-row">
+        <div class="space-block">
+          <div class="space-vis" style="height:4px;"></div>
+          <p class="space-label">0.25rem<br>4px</p>
+        </div>
+        <div class="space-block">
+          <div class="space-vis" style="height:8px;"></div>
+          <p class="space-label">0.5rem<br>8px</p>
+        </div>
+        <div class="space-block">
+          <div class="space-vis" style="height:12px;"></div>
+          <p class="space-label">0.75rem<br>12px</p>
+        </div>
+        <div class="space-block">
+          <div class="space-vis" style="height:16px;"></div>
+          <p class="space-label">1rem<br>16px</p>
+        </div>
+        <div class="space-block">
+          <div class="space-vis" style="height:24px;"></div>
+          <p class="space-label">1.5rem<br>24px</p>
+        </div>
+        <div class="space-block">
+          <div class="space-vis" style="height:32px;"></div>
+          <p class="space-label">2rem<br>32px</p>
+        </div>
+        <div class="space-block">
+          <div class="space-vis" style="height:48px;"></div>
+          <p class="space-label">3rem<br>48px</p>
+        </div>
+        <div class="space-block">
+          <div class="space-vis" style="height:64px;"></div>
+          <p class="space-label">4rem<br>64px</p>
+        </div>
+        <div class="space-block">
+          <div class="space-vis" style="height:80px;"></div>
+          <p class="space-label">5rem<br>80px</p>
+        </div>
+        <div class="space-block">
+          <div class="space-vis" style="height:96px;"></div>
+          <p class="space-label">6rem<br>96px</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ================================================================ -->
+  <!-- 06 VOICE -->
+  <!-- ================================================================ -->
+  <div class="section">
+    <div class="wrap">
+      <p class="section-label">06 &nbsp; Voice</p>
+      <h2 class="section-title">Tone of Voice</h2>
+      <p class="section-desc">
+        First person, experience-led, no hedging. The writing sounds like someone who has
+        done the work and is sharing what they actually learned, not performing expertise.
+      </p>
+
+      <div class="voice-grid">
+        <div class="voice-cell yes">
+          <p class="voice-cell-label yes">Write like this</p>
+          <ul>
+            <li>Direct. Short sentences. No padding.</li>
+            <li>First person. "I have seen", "I run accounts", "I learned".</li>
+            <li>Concrete over abstract. Data, examples, specifics.</li>
+            <li>Humble but confident. State opinions as opinions.</li>
+            <li>Contrarian when warranted. Call out received wisdom.</li>
+            <li>Story-forward. The context is as important as the point.</li>
+          </ul>
+        </div>
+        <div class="voice-cell no">
+          <p class="voice-cell-label no">Not like this</p>
+          <ul>
+            <li>Buzzwords or agency-speak. "Leverage synergies".</li>
+            <li>Hedging. "It could be argued that perhaps..."</li>
+            <li>Sales copy. Calls to action that feel like ads.</li>
+            <li>Passive voice. "Results were delivered by the team".</li>
+            <li>Listicles with no narrative thread.</li>
+            <li>Em dashes. Never. Use a comma or a full stop.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="bg-footer">
+    <div class="wrap">
+      <div class="footer-inner">
+        <span class="footer-logo">FONS<span style="color:var(--accent)">3</span>CA</span>
+        <span class="footer-meta">Brand Guidelines v1.0 &nbsp;·&nbsp; June 2026</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

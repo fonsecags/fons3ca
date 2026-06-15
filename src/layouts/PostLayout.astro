@@ -1,0 +1,99 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  date: Date;
+  slug: string;
+}
+
+const { title, description, date, slug } = Astro.props;
+
+const formattedDate = date.toLocaleDateString('en-GB', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+
+const ogImage = `/og/${slug}.png`;
+---
+
+<BaseLayout title={title} description={description} ogType="article" ogImage={ogImage} articleDate={date}>
+  <div class="container">
+    <article>
+      <header class="post-header">
+        <a href="/writing" class="back">← Writing</a>
+        <time datetime={date.toISOString()}>{formattedDate}</time>
+        <h1>{title}</h1>
+        <p class="description">{description}</p>
+      </header>
+      <hr class="divider" />
+      <div class="prose">
+        <slot />
+      </div>
+    </article>
+  </div>
+</BaseLayout>
+
+<style>
+  article {
+    padding: 4rem 0 6rem;
+    max-width: 680px;
+  }
+
+  .post-header {
+    margin-bottom: 2rem;
+  }
+
+  .back {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    letter-spacing: 0.02em;
+    margin-bottom: 2rem;
+    transition: color 0.15s;
+  }
+
+  .back:hover {
+    color: var(--text);
+  }
+
+  time {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    color: var(--text);
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2rem 0;
+  }
+
+  @media (max-width: 640px) {
+    article {
+      padding: 2.5rem 0 4rem;
+    }
+
+    .description {
+      font-size: 1rem;
+    }
+  }
+</style>

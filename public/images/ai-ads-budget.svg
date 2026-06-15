@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#0A0A0A"/>
+  <pattern id="g" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+    <path d="M60 0L0 0 0 60" fill="none" stroke="#111111" stroke-width="1"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#g)"/>
+
+  <!-- Three stacked ad format rows, like a SERP -->
+  <g>
+    <!-- Row 1 - Ad slot: bright, filled -->
+    <rect x="160" y="140" width="880" height="80" rx="3" fill="#0D1F36" stroke="#4B9EFF" stroke-width="1.5" opacity="0.9"/>
+    <rect x="180" y="158" width="60" height="10" rx="2" fill="#4B9EFF" opacity="0.8"/>
+    <rect x="260" y="158" width="260" height="10" rx="2" fill="#333333" opacity="0.6"/>
+    <rect x="180" y="180" width="520" height="8" rx="2" fill="#1E1E1E" opacity="0.8"/>
+    <rect x="180" y="196" width="380" height="8" rx="2" fill="#1E1E1E" opacity="0.5"/>
+
+    <!-- Row 2 - Ad slot: mid -->
+    <rect x="160" y="240" width="880" height="80" rx="3" fill="#0a0a0a" stroke="#222222" stroke-width="1" opacity="0.9"/>
+    <rect x="180" y="258" width="60" height="10" rx="2" fill="#1a1a1a" opacity="0.8"/>
+    <rect x="260" y="258" width="200" height="10" rx="2" fill="#1E1E1E" opacity="0.4"/>
+    <rect x="180" y="280" width="460" height="8" rx="2" fill="#151515" opacity="0.6"/>
+    <rect x="180" y="296" width="320" height="8" rx="2" fill="#151515" opacity="0.4"/>
+
+    <!-- Row 3 - Ad slot: dim -->
+    <rect x="160" y="340" width="880" height="80" rx="3" fill="#0a0a0a" stroke="#1a1a1a" stroke-width="1" opacity="0.6"/>
+    <rect x="180" y="358" width="60" height="10" rx="2" fill="#141414" opacity="0.6"/>
+    <rect x="260" y="358" width="180" height="10" rx="2" fill="#141414" opacity="0.3"/>
+    <rect x="180" y="380" width="400" height="8" rx="2" fill="#111111" opacity="0.5"/>
+    <rect x="180" y="396" width="260" height="8" rx="2" fill="#111111" opacity="0.3"/>
+  </g>
+
+  <!-- AI generation sparks around row 1 -->
+  <g fill="#4B9EFF" opacity="0.6">
+    <circle cx="1080" cy="155" r="2.5"/>
+    <circle cx="1095" cy="170" r="2"/>
+    <circle cx="1075" cy="185" r="1.5"/>
+    <circle cx="1090" cy="195" r="2"/>
+    <circle cx="1065" cy="162" r="1.5"/>
+  </g>
+  <line x1="1060" y1="150" x2="1070" y2="165" stroke="#4B9EFF" stroke-width="1" opacity="0.4"/>
+  <line x1="1080" y1="145" x2="1085" y2="160" stroke="#4B9EFF" stroke-width="1" opacity="0.3"/>
+
+  <!-- Label -->
+  <text x="60" y="596" font-family="monospace" font-size="11" fill="#2a2a2a" letter-spacing="3">AI-GENERATED</text>
+  <line x1="200" y1="591" x2="500" y2="591" stroke="#1A1A1A" stroke-width="1"/>
+</svg>

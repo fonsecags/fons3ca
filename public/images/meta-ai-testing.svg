@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0A0A0A"/>
+
+  <!-- Iterative loop diagram -->
+  <!-- Main loop arrow path (circular) -->
+  <circle cx="400" cy="230" r="130" stroke="#1E1E1E" stroke-width="1.5" stroke-dasharray="8 4"/>
+
+  <!-- Loop stage nodes -->
+  <!-- Top: Hypothesis -->
+  <rect x="340" y="78" width="120" height="38" rx="4" fill="#111111" stroke="#4B9EFF" stroke-width="1.5"/>
+  <text x="400" y="101" text-anchor="middle" font-family="monospace" font-size="11" fill="#4B9EFF">HYPOTHESIS</text>
+
+  <!-- Right: Test -->
+  <rect x="506" y="212" width="88" height="38" rx="4" fill="#111111" stroke="#333333" stroke-width="1.5"/>
+  <text x="550" y="235" text-anchor="middle" font-family="monospace" font-size="11" fill="#E8E8E8">TEST</text>
+
+  <!-- Bottom: Measure -->
+  <rect x="336" y="346" width="128" height="38" rx="4" fill="#111111" stroke="#333333" stroke-width="1.5"/>
+  <text x="400" y="369" text-anchor="middle" font-family="monospace" font-size="11" fill="#E8E8E8">MEASURE</text>
+
+  <!-- Left: Learn -->
+  <rect x="208" y="212" width="88" height="38" rx="4" fill="#111111" stroke="#333333" stroke-width="1.5"/>
+  <text x="252" y="235" text-anchor="middle" font-family="monospace" font-size="11" fill="#E8E8E8">LEARN</text>
+
+  <!-- Directional arrows -->
+  <!-- Hypothesis to Test (top-right arc) -->
+  <path d="M455 95 Q530 115 535 210" stroke="#4B9EFF" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <polygon points="535,210 530,198 524,208" fill="#4B9EFF" opacity="0.7"/>
+
+  <!-- Test to Measure (right-bottom arc) -->
+  <path d="M542 250 Q556 300 470 345" stroke="#555555" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <polygon points="470,345 482,340 474,333" fill="#555555" opacity="0.6"/>
+
+  <!-- Measure to Learn (bottom-left arc) -->
+  <path d="M336 368 Q270 380 250 252" stroke="#555555" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <polygon points="250,252 256,264 263,254" fill="#555555" opacity="0.6"/>
+
+  <!-- Learn to Hypothesis (left-top arc) -->
+  <path d="M240 212 Q232 140 338 96" stroke="#4B9EFF" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <polygon points="338,96 326,104 336,111" fill="#4B9EFF" opacity="0.7"/>
+
+  <!-- Center label -->
+  <text x="400" y="222" text-anchor="middle" font-family="monospace" font-size="10" fill="#555555">SIGNAL</text>
+  <text x="400" y="238" text-anchor="middle" font-family="monospace" font-size="10" fill="#555555">QUALITY</text>
+
+  <!-- Stacked learning rings (compounding effect) -->
+  <!-- Small rings to the right showing compound growth -->
+  <circle cx="700" cy="180" r="18" stroke="#1E1E1E" stroke-width="1.5" opacity="0.3"/>
+  <circle cx="700" cy="200" r="22" stroke="#2a2a2a" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="700" cy="222" r="28" stroke="#333333" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="700" cy="248" r="36" stroke="#4B9EFF" stroke-width="2" opacity="0.6"/>
+
+  <text x="700" y="303" text-anchor="middle" font-family="monospace" font-size="9" fill="#555555">COMPOUND</text>
+  <text x="700" y="316" text-anchor="middle" font-family="monospace" font-size="9" fill="#555555">LEARNING</text>
+
+  <!-- Vs. chaos on left -->
+  <g opacity="0.5">
+    <!-- Chaotic arrows - no direction -->
+    <line x1="96" y1="180" x2="148" y2="210" stroke="#555555" stroke-width="1" stroke-dasharray="3 2"/>
+    <line x1="148" y1="210" x2="112" y2="250" stroke="#555555" stroke-width="1" stroke-dasharray="3 2"/>
+    <line x1="112" y1="250" x2="162" y2="232" stroke="#555555" stroke-width="1" stroke-dasharray="3 2"/>
+    <line x1="162" y1="232" x2="130" y2="280" stroke="#555555" stroke-width="1" stroke-dasharray="3 2"/>
+    <text x="128" y="310" text-anchor="middle" font-family="monospace" font-size="9" fill="#555555">NO PROCESS</text>
+    <text x="128" y="323" text-anchor="middle" font-family="monospace" font-size="9" fill="#555555">NO LEARNING</text>
+  </g>
+
+  <!-- Bottom label -->
+  <text x="96" y="440" font-family="monospace" font-size="11" fill="#555555">RIGOROUS TESTING</text>
+  <text x="96" y="460" font-family="monospace" font-size="11" fill="#4B9EFF">COMPOUNDS</text>
+  <text x="96" y="460" font-family="monospace" font-size="11" fill="#555555">           OVER TIME</text>
+</svg>

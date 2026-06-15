@@ -1,0 +1,63 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <span class="logo">FONS<span class="accent">3</span>CA</span>
+      <span class="copy">© {year} Gustavo Fonseca · Málaga, Spain</span>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/gustavofonseca85/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 2rem 0;
+    margin-top: 6rem;
+  }
+
+  .footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .logo {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+  }
+
+  .accent {
+    color: var(--accent);
+  }
+
+  .copy {
+    font-size: 0.8rem;
+    color: var(--text-dim);
+  }
+
+  .social {
+    display: flex;
+    gap: 1.25rem;
+  }
+
+  .social a {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    transition: color 0.15s;
+  }
+
+  .social a:hover {
+    color: var(--text);
+  }
+</style>

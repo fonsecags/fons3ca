@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#0A0A0A"/>
+  <pattern id="g" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+    <path d="M60 0L0 0 0 60" fill="none" stroke="#111111" stroke-width="1"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#g)"/>
+
+  <!-- Three vertical phone screens side by side -->
+  <!-- Screen 1: dim, left -->
+  <rect x="200" y="120" width="170" height="300" rx="12" fill="#0f0f0f" stroke="#1E1E1E" stroke-width="1.5" opacity="0.7"/>
+  <rect x="215" y="138" width="140" height="264" rx="6" fill="#141414" opacity="0.8"/>
+  <!-- play button ghost -->
+  <polygon points="270,255 310,270 270,285" fill="#222222" opacity="0.6"/>
+
+  <!-- Screen 2: main, center with blue accent -->
+  <rect x="515" y="90" width="170" height="300" rx="12" fill="#0D1F36" stroke="#4B9EFF" stroke-width="2" opacity="1"/>
+  <rect x="530" y="108" width="140" height="264" rx="6" fill="#050d1a" opacity="0.9"/>
+  <!-- active play button -->
+  <polygon points="580,225 630,245 580,265" fill="#4B9EFF" opacity="0.9"/>
+  <!-- progress bar -->
+  <rect x="530" y="352" width="140" height="3" rx="1" fill="#1a1a1a"/>
+  <rect x="530" y="352" width="90"  height="3" rx="1" fill="#4B9EFF" opacity="0.8"/>
+  <!-- signal strength bars -->
+  <rect x="640" y="115" width="4" height="6"  rx="1" fill="#4B9EFF" opacity="0.3"/>
+  <rect x="647" y="112" width="4" height="9"  rx="1" fill="#4B9EFF" opacity="0.5"/>
+  <rect x="654" y="109" width="4" height="12" rx="1" fill="#4B9EFF" opacity="0.8"/>
+  <rect x="661" y="106" width="4" height="15" rx="1" fill="#4B9EFF" opacity="1"/>
+
+  <!-- Screen 3: dim, right -->
+  <rect x="830" y="120" width="170" height="300" rx="12" fill="#0f0f0f" stroke="#1E1E1E" stroke-width="1.5" opacity="0.7"/>
+  <rect x="845" y="138" width="140" height="264" rx="6" fill="#141414" opacity="0.8"/>
+  <polygon points="895,255 935,270 895,285" fill="#222222" opacity="0.6"/>
+
+  <!-- Connection lines between screens -->
+  <line x1="370" y1="270" x2="515" y2="250" stroke="#4B9EFF" stroke-width="1" opacity="0.2" stroke-dasharray="4 4"/>
+  <line x1="685" y1="250" x2="830" y2="270" stroke="#4B9EFF" stroke-width="1" opacity="0.2" stroke-dasharray="4 4"/>
+
+  <!-- Label -->
+  <text x="60" y="596" font-family="monospace" font-size="11" fill="#2a2a2a" letter-spacing="3">SHORT-FORM</text>
+  <line x1="185" y1="591" x2="480" y2="591" stroke="#1A1A1A" stroke-width="1"/>
+</svg>

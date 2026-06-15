@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#0A0A0A"/>
+
+  <!-- Ad account box (center) -->
+  <rect x="290" y="170" width="220" height="160" rx="4" fill="#111111" stroke="#1E1E1E" stroke-width="1.5"/>
+  <text x="400" y="198" text-anchor="middle" font-family="monospace" font-size="10" fill="#555555" letter-spacing="0.08em">AD ACCOUNT</text>
+
+  <!-- Internal account elements -->
+  <rect x="314" y="210" width="172" height="18" rx="2" fill="#0A0A0A" stroke="#1E1E1E" stroke-width="1"/>
+  <text x="400" y="223" text-anchor="middle" font-family="monospace" font-size="8" fill="#333333">CAMPAIGNS · BUDGETS</text>
+
+  <rect x="314" y="234" width="172" height="18" rx="2" fill="#0A0A0A" stroke="#1E1E1E" stroke-width="1"/>
+  <text x="400" y="247" text-anchor="middle" font-family="monospace" font-size="8" fill="#333333">AUDIENCES · BIDS</text>
+
+  <rect x="314" y="258" width="172" height="18" rx="2" fill="#0A0A0A" stroke="#1E1E1E" stroke-width="1"/>
+  <text x="400" y="271" text-anchor="middle" font-family="monospace" font-size="8" fill="#333333">CREATIVE · COPY</text>
+
+  <rect x="314" y="282" width="172" height="18" rx="2" fill="#0A0A0A" stroke="#1E1E1E" stroke-width="1"/>
+  <text x="400" y="295" text-anchor="middle" font-family="monospace" font-size="8" fill="#333333">RULES · SCRIPTS</text>
+
+  <!-- Agent approaching from left (broad access - red) -->
+  <g opacity="0.85">
+    <rect x="60" y="216" width="120" height="68" rx="3" fill="#1a0a0a" stroke="#8B2222" stroke-width="1.5"/>
+    <text x="120" y="238" text-anchor="middle" font-family="monospace" font-size="9" fill="#CC3333">AI AGENT</text>
+    <text x="120" y="254" text-anchor="middle" font-family="monospace" font-size="8" fill="#CC3333" opacity="0.7">broad access</text>
+    <text x="120" y="268" text-anchor="middle" font-family="monospace" font-size="8" fill="#CC3333" opacity="0.5">all permissions</text>
+    <!-- Arrow to account -->
+    <line x1="180" y1="250" x2="288" y2="250" stroke="#CC3333" stroke-width="1.5" stroke-dasharray="6 3" opacity="0.6"/>
+    <polygon points="288,246 296,250 288,254" fill="#CC3333" opacity="0.6"/>
+  </g>
+
+  <!-- Agent from right (scoped - blue) -->
+  <g opacity="0.85">
+    <rect x="620" y="216" width="120" height="68" rx="3" fill="#0e1825" stroke="#4B9EFF" stroke-width="1.5"/>
+    <text x="680" y="238" text-anchor="middle" font-family="monospace" font-size="9" fill="#4B9EFF">AI AGENT</text>
+    <text x="680" y="254" text-anchor="middle" font-family="monospace" font-size="8" fill="#4B9EFF" opacity="0.7">scoped access</text>
+    <text x="680" y="268" text-anchor="middle" font-family="monospace" font-size="8" fill="#4B9EFF" opacity="0.5">task only</text>
+    <!-- Arrow to account -->
+    <line x1="512" y1="250" x2="620" y2="250" stroke="#4B9EFF" stroke-width="1.5" opacity="0.6"/>
+    <polygon points="620,246 628,250 620,254" fill="#4B9EFF" opacity="0.6"/>
+    <polygon points="512,246 504,250 512,254" fill="#4B9EFF" opacity="0.6"/>
+  </g>
+
+  <!-- Labels -->
+  <text x="120" y="308" text-anchor="middle" font-family="monospace" font-size="9" fill="#8B2222">RISK</text>
+  <text x="680" y="308" text-anchor="middle" font-family="monospace" font-size="9" fill="#4B9EFF">CONTROLLED</text>
+
+  <!-- Monitoring band below account -->
+  <rect x="290" y="350" width="220" height="32" rx="2" fill="#111111" stroke="#4B9EFF" stroke-width="1" opacity="0.6"/>
+  <text x="400" y="364" text-anchor="middle" font-family="monospace" font-size="9" fill="#4B9EFF" opacity="0.7">MONITORING LAYER</text>
+  <text x="400" y="376" text-anchor="middle" font-family="monospace" font-size="8" fill="#555555">anomaly detection · spend velocity · ROAS delta</text>
+  <line x1="400" y1="330" x2="400" y2="350" stroke="#4B9EFF" stroke-width="1" opacity="0.4" stroke-dasharray="3 2"/>
+
+  <!-- Bottom note -->
+  <text x="96" y="440" font-family="monospace" font-size="11" fill="#555555">SCOPE PERMISSIONS PER TASK</text>
+  <text x="96" y="460" font-family="monospace" font-size="11" fill="#4B9EFF">DESIGN</text>
+  <text x="96" y="460" font-family="monospace" font-size="11" fill="#555555">       FOR BREACH FROM DAY ONE</text>
+</svg>

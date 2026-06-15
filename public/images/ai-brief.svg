@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#0A0A0A"/>
+
+  <!-- Background grid dots -->
+  <pattern id="dots" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+    <circle cx="20" cy="20" r="1" fill="#1E1E1E"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- Left side: scattered messy inputs -->
+  <!-- Triangle -->
+  <polygon points="100,180 160,280 40,280" fill="none" stroke="#333333" stroke-width="1.5" opacity="0.8"/>
+  <!-- Circle -->
+  <circle cx="200" cy="160" r="35" fill="none" stroke="#333333" stroke-width="1.5" opacity="0.6"/>
+  <!-- Square rotated -->
+  <rect x="60" y="340" width="60" height="60" fill="none" stroke="#333333" stroke-width="1.5" opacity="0.7" transform="rotate(20 90 370)"/>
+  <!-- Small shapes -->
+  <rect x="180" y="360" width="40" height="40" fill="none" stroke="#333333" stroke-width="1" opacity="0.5"/>
+  <circle cx="130" cy="460" r="20" fill="none" stroke="#333333" stroke-width="1" opacity="0.4"/>
+  <polygon points="220,440 260,510 180,510" fill="none" stroke="#333333" stroke-width="1" opacity="0.5"/>
+  <!-- Noise lines -->
+  <line x1="50"  y1="120" x2="130" y2="140" stroke="#222222" stroke-width="1" opacity="0.6"/>
+  <line x1="170" y1="220" x2="250" y2="200" stroke="#222222" stroke-width="1" opacity="0.5"/>
+  <line x1="80"  y1="520" x2="200" y2="500" stroke="#222222" stroke-width="1" opacity="0.4"/>
+
+  <!-- Funnel / pipeline center -->
+  <!-- Funnel left mouth -->
+  <path d="M 360 140 L 580 270 L 580 360 L 360 490" fill="none" stroke="#4B9EFF" stroke-width="1.5" opacity="0.3"/>
+  <!-- Funnel body -->
+  <rect x="580" y="255" width="40" height="120" fill="#0D1F36" stroke="#4B9EFF" stroke-width="1.5" opacity="0.8"/>
+  <!-- Glow inside -->
+  <rect x="584" y="259" width="32" height="112" fill="#4B9EFF" opacity="0.08"/>
+  <!-- Center line through funnel -->
+  <line x1="360" y1="315" x2="580" y2="315" stroke="#4B9EFF" stroke-width="1" opacity="0.4"/>
+  <line x1="620" y1="315" x2="840" y2="315" stroke="#4B9EFF" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Funnel right mouth -->
+  <path d="M 620 270 L 840 180 L 840 450 L 620 360" fill="none" stroke="#4B9EFF" stroke-width="1" opacity="0.15"/>
+
+  <!-- Right side: clean ordered outputs -->
+  <!-- Clean rectangle rows -->
+  <rect x="880" y="190" width="200" height="28" rx="2" fill="none" stroke="#4B9EFF" stroke-width="1.5" opacity="0.7"/>
+  <rect x="880" y="240" width="200" height="28" rx="2" fill="none" stroke="#4B9EFF" stroke-width="1.5" opacity="0.55"/>
+  <rect x="880" y="290" width="200" height="28" rx="2" fill="none" stroke="#4B9EFF" stroke-width="1.5" opacity="0.4"/>
+  <rect x="880" y="340" width="200" height="28" rx="2" fill="none" stroke="#4B9EFF" stroke-width="1.5" opacity="0.55"/>
+  <rect x="880" y="390" width="200" height="28" rx="2" fill="none" stroke="#4B9EFF" stroke-width="1.5" opacity="0.7"/>
+  <!-- Fill accent on top/bottom -->
+  <rect x="880" y="190" width="200" height="28" rx="2" fill="#4B9EFF" opacity="0.05"/>
+  <rect x="880" y="390" width="200" height="28" rx="2" fill="#4B9EFF" opacity="0.05"/>
+
+  <!-- Connection dots -->
+  <circle cx="840" cy="204" r="3" fill="#4B9EFF" opacity="0.5"/>
+  <circle cx="840" cy="254" r="3" fill="#4B9EFF" opacity="0.4"/>
+  <circle cx="840" cy="304" r="3" fill="#4B9EFF" opacity="0.6"/>
+  <circle cx="840" cy="354" r="3" fill="#4B9EFF" opacity="0.4"/>
+  <circle cx="840" cy="404" r="3" fill="#4B9EFF" opacity="0.5"/>
+
+  <!-- Bottom label -->
+  <text x="60" y="590" font-family="monospace" font-size="11" fill="#333333" letter-spacing="3">INPUT / OUTPUT</text>
+  <line x1="220" y1="585" x2="500" y2="585" stroke="#1E1E1E" stroke-width="1"/>
+</svg>
