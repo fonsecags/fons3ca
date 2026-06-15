@@ -1,44 +1,34 @@
 ---
-title: "Why Meta's Hardware Race Should Matter to Performance Marketers"
-description: "Four custom AI chips in two years. Meta is building the infrastructure for AI at a scale most people have not thought through. What it means for the ads running on its platforms is more concrete than it sounds."
+title: "Why Meta's AI Chip Investment Affects Your Ad Performance"
+description: "Meta's custom AI chips widen the gap between strong and weak ad accounts. Here's what to prioritise in your Meta campaigns so your ads benefit from better targeting infrastructure."
 date: 2026-06-07
 category: "AI"
 image: "/images/meta-hardware.svg"
 draft: false
 ---
 
-Meta shipped four generations of custom AI chips in two years. The MTIA, their in-house silicon designed specifically for training and running AI models, is now at the fourth iteration. Each generation faster, more efficient, more capable than the last.
+## What is happening
 
-Most marketers read this as a tech story. I read it as an infrastructure story, and infrastructure is where advertising performance actually lives.
+Meta has shipped four generations of custom AI chips in two years. The MTIA - their in-house silicon designed for training and running AI models - is now at its fourth iteration. Each generation is faster, more efficient, and more capable than the last. Meta is also building new data centres at a scale that represents some of the largest infrastructure investment in the company's history.
 
-## Why chip speed matters to you
+Most marketers read this as a technology story with no direct connection to their ad account. That is the wrong read.
 
-The quality of Meta's ad targeting, ranking, and optimisation systems is directly constrained by how fast they can run inference. Inference is what happens when the model makes a decision: which ad to show, which user to show it to, what bid to set, which creative variant to serve.
+## What I learned from this
 
-Faster, more efficient chips mean more decisions per second, more model complexity per decision, and lower cost per inference. That compounds into better ad performance because the system can process more signals, run more complex models, and make more accurate predictions about what will work.
+The quality of Meta's ad targeting, ranking, and optimisation depends on how fast the system can make decisions. Every time a feed loads, the algorithm is deciding which content and which ad to show that specific person, in that specific moment, with that specific context. Faster, more capable chips mean more signals processed, more model complexity per decision, more accurate predictions about what will convert.
 
-When Meta says these chips are for scaling AI experiences for billions of users, what that means in advertising terms is: the targeting is going to keep getting smarter, faster, and the gap between campaigns that feed the system good signals and campaigns that do not is going to keep widening.
+When Meta says this infrastructure is for scaling AI experiences for billions of users, what that means in advertising terms is: the targeting is getting smarter faster, and the gap between accounts that feed the system quality signals and accounts that do not is widening.
 
-## The signal quality gap
+I have seen this play out directly. The difference between a Meta campaign with clean conversion data, proper Conversions API setup, well-structured audiences, and diverse creative versus one with patchy pixel data and recycled creative is enormous. Two years ago it was meaningful. Today it is the difference between an account that performs and one that struggles regardless of budget.
 
-I talk a lot about signal quality because I have seen accounts transformed by it. The difference between a Meta campaign with clean conversion data, well-structured audiences, and high-quality creative assets versus one with patchy data and recycled creative is enormous. And it is growing.
+The reason the gap is widening is exactly what Meta's hardware investment describes. More compute power means better models. Better models are better at extracting value from good signals and they are also better at recognising and discounting bad ones. The floor is rising. But so is the ceiling.
 
-As Meta's infrastructure gets faster and more capable, the system can do more with good signals and less with bad ones. The floor is rising, but so is the ceiling. The accounts that invest in data quality, proper pixel setup, conversion API implementation, and genuine creative testing are pulling further ahead, not closer to average.
+## What I recommend for your business
 
-The hardware race Meta is running is partly responsible for that acceleration. They are building the compute to run better models. Better models amplify the quality of what you put in.
+Two things matter most right now for every Meta account, and both have become more important as Meta's infrastructure has improved.
 
-## What this means practically
+First, fix your conversion signals. If you are relying solely on browser-based pixel tracking, you are giving the system incomplete data. Browser privacy changes, iOS restrictions, and ad blockers mean a significant portion of your conversions are invisible to the algorithm. Implement the Conversions API. It sends conversion data directly from your server to Meta, bypassing the browser entirely. This is not a nice-to-have. It is the foundation the algorithm needs to optimise effectively.
 
-Two things I focus on for every Meta account I manage, and why they matter more now than they did two years ago.
+Second, invest in creative volume and diversity. Meta's AI optimises across audience segments, but it needs enough creative variation to learn what works for different people. If you are running two or three ad variations, the system cannot do its job. Build asset libraries with at least ten to fifteen distinct creative directions: different hooks, different formats, different proof points, different tones. Give the algorithm something to test.
 
-First, conversion signals. The Conversions API is not optional anymore. If you are relying solely on browser-based tracking in an era of increasing signal loss, you are giving the system incomplete information to work with. More compute does not fix incomplete data.
-
-Second, creative volume and diversity. Meta's AI needs enough creative variation to learn what works for different audience segments. Accounts running two or three ad variants are leaving money on the table. The system cannot optimise what it cannot test.
-
-Neither of these is new advice. The reason they matter more now is that Meta is building infrastructure specifically designed to extract more value from accounts that do them well.
-
-## The broader point
-
-Advertisers tend to think about platforms at the surface level: what formats are available, what the targeting options are, what the interface looks like. The infrastructure underneath is invisible but it determines almost everything about what is actually possible.
-
-Meta is investing billions in making that infrastructure better. The question is not whether that investment will improve ad performance. It will. The question is whether your account is set up to benefit from it.
+Neither of these is new advice. The reason they matter more now is that Meta is building infrastructure specifically designed to extract more value from accounts that do them well. The investment they are making in compute is an investment in amplifying signal quality. Make sure you have signal worth amplifying.

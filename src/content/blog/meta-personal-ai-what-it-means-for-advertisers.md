@@ -1,46 +1,34 @@
 ---
-title: "Meta Is Building Personal AI. Here's What That Means for Advertisers"
-description: "Meta's push toward personal superintelligence is not just a product announcement. It is a signal about where the relationship between users and platforms is going, and advertisers need to pay attention."
+title: "Meta's Personal AI Changes How Customers Buy. Here's What to Do."
+description: "Meta's Muse Spark will mediate how customers discover and choose products. Here's what I'm prioritising across client accounts as this shift unfolds and what your business should focus on now."
 date: 2026-06-12
 category: "AI"
 image: "/images/meta-personal-ai.svg"
 draft: false
 ---
 
-Meta just announced Muse Spark, positioned as a step toward personal superintelligence. An AI that knows you, learns from you, and over time becomes a genuine personal assistant rather than a general-purpose tool.
+## What is happening
 
-The headline is about the technology. The story for advertisers is about what happens to attention when it does.
+Meta announced Muse Spark, positioned as a step toward personal superintelligence. The idea is an AI that learns your preferences, understands your context, and over time becomes a genuine personal assistant rather than a generic tool. It sits inside Meta's platforms and mediates how you discover products, ask questions, and make decisions.
 
-## What personal AI actually changes
+Right now this is early. But the direction is clear: the path from ad impression to purchase is going to run through an AI assistant, not just through a feed. That changes a fundamental assumption that performance advertising has been built on.
 
-Right now, the relationship between a user and Meta's platforms is relatively direct. Someone opens Instagram. They see content, they see ads, they interact with what catches them. The ad system has a reasonably clear picture of what that person responds to.
+## What I learned from this
 
-Personal AI changes the architecture of that relationship. If an AI assistant is mediating how someone discovers products, asks questions, and makes decisions, the path from ad impression to purchase runs through the AI, not just through the platform. The AI becomes a filter, a recommender, a decision support tool.
+Performance marketing runs on intent signals. Someone searches, clicks, visits a page. Those actions tell you where they are in a buying journey. The whole infrastructure of digital advertising - the targeting, the bidding, the attribution - is built around capturing and acting on those signals.
 
-That is a different kind of influence than a feed algorithm. And it has different implications for how you reach people.
+Personal AI changes the architecture. If a Meta AI assistant is the thing that recommends a product to you, the intent signal happens inside the conversation with the AI. It may never show up as a search query or a page visit. The decision is largely made before the purchase click happens.
 
-## The intent signal problem
+What this tells me is that top-of-funnel brand presence is going to matter more, not less. The AI will form opinions about brands based on available signals: reviews, content, mentions, reputation. If someone asks the AI which company to use for home renovations and your business has no meaningful digital presence beyond running ads, the AI has nothing to recommend you with.
 
-Performance marketing runs on intent signals. Someone searches for something, clicks on something, visits a page. Those actions tell you where they are in a buying journey and what they are likely to do next.
+I have been paying much closer attention to brand signal quality across the accounts I manage. Not just ad performance metrics but the things an AI would use to form an opinion: review volume and sentiment, organic content quality, earned coverage, the clarity of the business's positioning. That content is increasingly what determines whether an AI-mediated recommendation goes your way or your competitor's.
 
-Personal AI compresses and changes intent signals. If I ask my AI assistant whether I should buy a new laptop, that is a high-intent signal that might never show up in a traditional search query. If the AI recommends a product, the search happens after the decision is largely made.
+## What I recommend for your business
 
-The implication is that top-of-funnel influence becomes more important, not less. Brand presence inside the AI experience, through content, through reputation, through the data the AI has access to, starts to matter more than it has in a pure direct response world.
+You do not need to rebuild your Meta strategy because of this announcement. What you should do is stop treating brand and performance as separate problems with separate budgets and separate goals.
 
-This is not an immediate problem. But the shift is underway, and the teams thinking about it now will be better positioned when it arrives at scale.
+The performance budget gets your ads in front of the right people right now. The brand investment determines whether those people - and the AI systems mediating their decisions - have a positive impression of you when they are ready to act.
 
-## What I am doing about it
+Three specific things to focus on: get your Google and Meta review count up by actively asking satisfied customers for reviews. Publish content that explains what you do, who you serve, and what makes you different - not to rank in search but to exist as a signal. And make sure your business profiles are complete, accurate, and consistent everywhere they appear online.
 
-Practically, not much has changed yet in how Meta campaigns run day to day. The bidding systems, the audience signals, the creative formats are all the same.
-
-What I am paying more attention to is brand signal quality. Reviews, organic content, earned coverage. The things that an AI would use to form an opinion about a brand when someone asks about it. That content is increasingly what determines whether an AI-mediated recommendation goes your way or your competitor's.
-
-Performance marketing has always had a brand problem. Teams that run direct response as if brand does not exist tend to hit walls that pure optimisation cannot break through. Personal AI is going to make that wall hit sooner and harder.
-
-## The practical takeaway
-
-You do not need to rebuild your Meta strategy tomorrow. What you should do is stop treating brand and performance as separate budgets with separate goals.
-
-The platforms Meta is building are going to reward businesses that are genuinely known and trusted, not just ones that are technically findable. The AI will make that distinction faster and more clearly than a feed algorithm ever did.
-
-Build the brand. Run the performance. Stop treating them as opposites.
+The AI will make the brand-versus-performance wall hit sooner and harder than it would have without it. The businesses that will benefit are the ones who are genuinely known and trusted before the AI starts making recommendations at scale. Start building that now.

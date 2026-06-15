@@ -1,42 +1,32 @@
 ---
 title: "AI Is Rebuilding Marketing. Here's What's Actually Changing"
-description: "Everyone says AI is transforming marketing. Most of what they mean is surface-level. The real change is happening in a place most teams are not looking."
+description: "AI has automated marketing execution. Here's what I see shifting in real accounts and what your business should do before your competitors figure it out."
 date: 2026-06-10
 category: "AI"
 image: "/images/ai-rebuilding.svg"
 draft: false
 ---
 
-I have been in performance marketing long enough to have lived through several waves of technology that were supposed to change everything. Programmatic. Mobile-first. Social. Each one genuinely changed some things. Each one left most of the fundamentals untouched.
+## What is happening
 
-AI is different. Not in the way the press releases say, but in a more specific and more important way.
+The execution layer of marketing has been automated. Ad copy, image variations, keyword research, audience segmentation, reporting - all of it can now be produced in minutes by AI tools. Every major platform has made this the default. Google, Meta, TikTok are all pushing businesses to let the AI handle the work. Most businesses have said yes and moved on.
 
-## What is not changing
+The result is that what used to be proof of competence - building a campaign well, writing sharp copy, structuring an account correctly - is now a commodity. Any team with a subscription can do it passably.
 
-The fundamentals of why people buy things have not changed. The importance of understanding your customer has not changed. The need to measure what actually matters, not what is easy to measure, has not changed.
+## What I learned from this
 
-A lot of what is sold as AI transformation is actually automation of things that were already being done manually. Faster, cheaper, at more scale. That is useful. It is not transformation.
+I have watched this shift across the accounts I manage. The teams who are getting better results are not the ones using the most AI tools. They are the ones who treat every campaign as a question worth answering, not just a piece of content to deploy.
 
-## What is genuinely changing
+The teams struggling are the ones who automated production but never asked what they were supposed to be learning. Output increased. Understanding did not. They are moving faster toward a destination they have not properly defined.
 
-The cost of testing has collapsed. Running a hundred creative variations used to require a production budget and weeks of work. Now it requires a good brief and an afternoon. This is not a small thing. It means the teams who treat every campaign as a learning opportunity can generate real competitive advantage, while teams who are still running three ad variants are falling further behind every month.
+Here is what I have started noticing: AI is excellent at doing things. It is completely useless at knowing which things are worth doing. That distinction is now the entire job.
 
-The relationship between data and decisions is changing. AI systems can now process signals that no human analyst could synthesise at the speed campaigns require. The implication is not that analysts are obsolete. It is that the value of human analysis has shifted from processing data to asking the right questions about what the data means.
+The marketers who are falling behind are waiting for the AI to tell them what to work on. The ones pulling ahead are using it to test more hypotheses per month than they used to test per year.
 
-The barrier between channels is dissolving. Search, display, video, shopping: they are increasingly fed by the same audience data, optimised by the same bidding systems, and measured against the same conversion actions. The specialist who only knows one channel is becoming a liability. The strategist who understands how the ecosystem connects is becoming more valuable.
+## What I recommend for your business
 
-## The structural shift most teams are missing
+Stop measuring AI value by how much content it produces. Start measuring it by how much you are learning each month about what actually makes your customers act.
 
-For most of my career, the dominant skill in performance marketing was execution. How well you could build campaigns, structure accounts, write copy, and manage bids. Those things still matter. But they are becoming table stakes rather than differentiators.
+Pick one thing you genuinely do not know about your customer. Not a guess - a real open question. Build a campaign this month designed to answer it. Two approaches, same audience, watch what wins and ask why.
 
-The skill that is now scarce is synthesis. The ability to look across channels, data sources, and business objectives and form a coherent view of what is actually working and why. To translate that view into a strategy that a team can execute. To update that view when the evidence changes.
-
-AI can run campaigns. It cannot yet tell you which campaigns are worth running.
-
-## What this means for how I work
-
-I have changed how I spend my time over the past two years. Less time on the mechanics of campaign management. More time on understanding the businesses I work with deeply enough to ask the questions the data cannot answer on its own.
-
-The teams I see struggling are the ones waiting for AI to tell them what to do. The ones winning are the ones using AI to do more with what they already know.
-
-That gap is where the work is.
+Give AI something worth testing. Then pay close attention to what comes back. The businesses coming out ahead are the ones building a learning advantage, not just a production advantage. AI has made production free. Learning is still expensive. That is where the real gap is opening up.

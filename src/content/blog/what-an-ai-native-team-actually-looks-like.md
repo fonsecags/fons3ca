@@ -1,38 +1,34 @@
 ---
-title: "What an AI-Native Team Actually Looks Like"
-description: "Anthropic restructured their engineering org around AI. The changes they made are not what most teams expect, and the lessons transfer well beyond software."
+title: "What an AI-Native Marketing Team Actually Looks Like"
+description: "When AI handles execution, the bottleneck shifts to judgment. What Anthropic's team restructure taught me about running better marketing operations and where to focus human attention."
 date: 2026-06-13
 category: "AI"
 image: "/images/ai-native-team.svg"
 draft: false
 ---
 
-Anthropic published a piece on how they restructured their engineering team once agentic AI became the default way work got done. I read it expecting advice about tools. What I got was a much more interesting argument about how the nature of the bottleneck changes, and what you do about it.
+## What is happening
 
-The short version: when AI handles the execution, the constraint shifts to judgment. The team that figures out what to verify, what to question, and what to let run becomes more valuable than the team that can produce the most output.
+Anthropic published a detailed account of how they restructured their engineering team once AI became the default way work got done inside the company. The changes were not what most people expect when they imagine an "AI-native" team. They did not just add AI tools to existing workflows. They rethought what the actual job was once AI was doing the execution.
 
-That is not a software insight. That is a management insight.
+The core finding: when AI handles execution, the constraint shifts entirely to judgment. The bottleneck is no longer production. It is knowing what to question, what to verify, and what to let run.
 
-## The bottleneck has moved
+## What I learned from this
 
-For most marketing teams, the bottleneck is still production. Writing ads, building reports, pulling data, briefing creative. AI is solving that problem fast, and most teams have noticed.
+For most marketing teams, the bottleneck is still production. Writing ads, building reports, pulling data, briefing creative. AI is solving that fast and most teams have noticed. What fewer teams have noticed is that removing the production bottleneck just exposes the judgment bottleneck underneath it.
 
-What fewer teams have noticed is that removing the production bottleneck exposes the judgment bottleneck underneath it. If you can produce ten times as many ad variants, the constraint is now the quality of the decision about which ones to test and how to interpret what comes back. If you can generate a report in seconds, the constraint is whether anyone in the room can read it correctly.
+If you can produce ten times more ad variants, the constraint is now the quality of the decision about which ones to test and how to read what comes back. If you can generate a report in seconds, the constraint is whether anyone in the room can interpret it correctly and act on it.
 
-The Anthropic team found the same thing. Once Claude could write code, the valuable work became code review, domain expertise, and knowing which problems were worth solving. The question for marketing teams is the same: once AI can do the work, what is the work?
+I have been watching this play out across teams I work with. The ones doing well after adopting AI tools are the ones who got clearer about what the humans need to own: the strategy question, the diagnosis of what is actually going wrong, the decision about what is worth testing next. The ones struggling are the ones who used AI to produce more of the same work faster without changing how they think about what the work is.
 
-## Just-in-time planning
+The Anthropic piece also made a point about planning horizon that I have experienced directly. They moved away from six-month roadmaps toward shorter cycles - prototype quickly, get feedback, adjust. Quarterly campaign plans are starting to feel the same way to me. You are committing to assumptions before you have tested them. The teams running tighter hypotheses and faster reads are getting better results than the ones following a plan.
 
-The other thing that changes is planning horizon. The Anthropic team moved away from six-month roadmaps toward what they call just-in-time planning. Prototype quickly, get internal feedback, adjust. Longer plans assume stable conditions and stable capabilities. Neither is true right now.
+## What I recommend for your business
 
-I have been moving in the same direction with campaigns. The quarterly plan used to feel like a necessary structure. Now it often feels like a way to commit to assumptions before you have tested them. The teams I work with that are doing well are the ones running tighter cycles, shorter hypotheses, faster reads.
+Find the three workflows in your marketing operation that are the most expensive and the most dreaded. The reporting format no one acts on. The approval process that adds time without adding quality. The briefing template that gets filled in and immediately ignored.
 
-This is uncomfortable for organisations that like certainty. But the certainty was always partly fictional. The plan gave the feeling of control more than the reality of it. AI just makes the fiction harder to sustain because the speed at which things can change has increased.
+Ask whether each one still produces genuine value. If it does not, cut it. If it does, automate it and move the human attention to what comes after.
 
-## What to actually do with this
+Then think about what you need humans to own in a world where production is no longer the constraint. Someone needs to be responsible for the quality of the questions being asked, not just the quality of the content being produced. Someone needs to be able to read the data and form a view about what it actually means for the business. Someone needs to make the call about what to test next.
 
-The Anthropic team offers one piece of advice that stuck with me: find your noisiest workflow. The thing that is expensive, dreaded, and generally understood to be a waste of time. Ask whether it still serves its purpose. If it does not, kill it. If it does, automate it.
-
-Most teams have at least three of these. Reporting formats nobody acts on. Approval processes that add time without adding quality. Briefing templates that get filled in and then ignored.
-
-The point is not to automate everything. It is to distinguish between process that exists because it genuinely produces value and process that exists because it has always existed. AI creates the forcing function to ask that question properly, often for the first time.
+Those are judgment roles. AI cannot fill them. If your team structure does not clearly assign them, that is the gap to close before you add any more tools.

@@ -1,40 +1,36 @@
 ---
 title: "Before You Give an AI Agent Access to Your Ad Account"
-description: "AI agents that can take actions in your marketing stack are genuinely useful. They are also a new category of risk that most teams are not thinking about clearly."
+description: "AI automation in Google and Meta accounts is powerful and risky. Here's what I've learned about scoping permissions, monitoring for problems, and staying in control."
 date: 2026-06-08
 category: "AI"
 image: "/images/ai-agent-trust.svg"
 draft: false
 ---
 
-I have been using automated rules, scripts, and AI-assisted bidding in ad accounts for years. The level of autonomy available to these systems has increased steadily, and the direction of travel is clear: AI agents that can observe, decide, and act inside your marketing stack without a human approving every move are coming fast, and for many teams they are already here.
+## What is happening
 
-Anthropic published a piece on Zero Trust architecture for AI agents. It is written for security engineers, but the underlying argument matters for anyone responsible for a marketing stack where AI is taking on more autonomous decision-making.
+AI agents that can observe, decide, and act inside your marketing accounts without a human approving each step are no longer theoretical. Automated bidding rules, budget scripts, and AI-driven optimisation tools are already making changes in accounts without anyone reviewing them in real time. The level of autonomy available to these systems is increasing fast, and the trend is clearly toward more, not less.
 
-The core point: the old model of security assumed you could define a perimeter and protect it. Autonomous agents break that model because they operate inside the perimeter with legitimate permissions and can still cause serious problems. The question is not just whether the agent is trustworthy in general. It is whether the specific action it is taking right now is within appropriate scope.
+Anthropic recently published research on Zero Trust architecture for AI agents - the idea that rather than granting agents broad access and trusting them to behave, you scope their permissions specifically to what the current task requires. It was written for security engineers. The argument applies directly to anyone running paid media.
 
-## What goes wrong
+## What I learned from this
 
-I have seen automated bidding strategies behave in ways nobody intended. A script written to protect impression share ends up inflating CPCs across an account in a way that takes three days to diagnose. A budget automation rule triggers during a weekend and redistributes spend in a direction that made sense for one campaign objective but not for three others.
+I have been using automation in ad accounts for years and I have seen things go wrong in ways nobody intended. A budget rule set up to protect impression share that ends up inflating CPCs across the whole account for three days before anyone notices. A bidding script that behaves sensibly during the week and does something unexpected over a weekend when no one is watching.
 
-None of these are catastrophic. But they illustrate the pattern: the agent did what it was permitted to do, under conditions nobody had thought to anticipate. The permission scope was too broad for the situation.
+In every case the automation did exactly what it was permitted to do. The problem was not the tool. It was that the scope of what it was permitted to do was too broad for the situation it found itself in.
 
-Anthropic's framework addresses this by advocating for per-task permission scoping. Rather than granting an agent broad access and trusting it to behave, you scope permissions specifically to what the current task requires and nothing beyond. An agent checking budget pacing should not have the ability to pause campaigns. An agent testing ad copy should not have write access to audience definitions.
+What I have learned is that two things matter most when you delegate to any automated system. First, the scope of its permissions should match the task, not the maximum of what is technically possible. An agent that checks budget pacing does not need the ability to pause campaigns. An agent testing ad copy does not need write access to your audience lists. Most teams grant the broadest access that works and move on. That is where the exposure is.
 
-This sounds obvious stated plainly. In practice, most teams grant the broadest access that technically works and move on.
+Second, assume something will eventually go wrong. Not because the system is bad but because conditions change in ways nobody anticipated. The question is not whether you have set it up correctly. It is whether you will know quickly when something goes outside expected behaviour.
 
-## Assume something will go wrong
+## What I recommend for your business
 
-The second principle is harder to sit with: design for breach from day one. The assumption is not that the system will behave correctly if set up properly. The assumption is that something will eventually go wrong, and the question is whether you can detect it quickly and limit the damage.
+Do this before you enable any new automation in your account.
 
-For ad accounts this means monitoring that is actually sensitive enough to catch anomalies, not just weekly performance reviews. It means clear escalation when spend velocity or ROAS moves outside defined ranges. It means knowing, at any given moment, what your automated systems are doing and why.
+Write down exactly what the automation is supposed to do and what it is not supposed to do. Then check whether the permissions you have granted match that list. Most of the time they will be broader. Narrow them.
 
-Most accounts I have audited do not have this. The automations are running, the humans are checking the top-line numbers periodically, and the gap between "something went wrong" and "we noticed" is measured in days.
+Set up actual monitoring with defined thresholds. Not weekly performance reviews - daily alerts for spend velocity, ROAS, and impression share that tell you when something is outside the range you would expect. The gap between "something went wrong" and "we noticed" should be hours, not days.
 
-## The practical takeaway
+And keep a record of what automations are running and what they are each permitted to change. You should be able to answer, at any moment, what your automated systems are doing and why. If you cannot, that is the first thing to fix.
 
-I am not arguing against AI agents in marketing. The efficiency gains are real and the capability will keep improving.
-
-What I am arguing for is approaching them the way you would approach any powerful tool: with a clear understanding of what they are permitted to do, explicit limits on that scope, and monitoring that tells you quickly when something is outside expected behaviour.
-
-The teams that will benefit most from this technology are not the ones who move fastest. They are the ones who move deliberately, understand what they are delegating, and build in the checks that let them trust the systems they are running.
+The efficiency gains from automation are real. So is the risk when something runs outside expected parameters. Both are manageable. You just have to manage them deliberately.
